@@ -10,6 +10,7 @@ import UIKit
 import CoreData
 import Fabric
 import Crashlytics
+import DigitsKit
 
 
 @UIApplicationMain
@@ -20,7 +21,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
         
-        Fabric.with([Crashlytics.self])
+        Fabric.with([Crashlytics.self,Digits.self])
 
         // Override point for customization after application launch.
         return true

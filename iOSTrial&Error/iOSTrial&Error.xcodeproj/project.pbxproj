@@ -15,6 +15,9 @@
 		533603F51D80EE3300EAE5A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 533603F31D80EE3300EAE5A6 /* LaunchScreen.storyboard */; };
 		5395FAFB1D811EAE00179E40 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5395FAF91D811EAE00179E40 /* Fabric.framework */; };
 		5395FAFC1D811EAE00179E40 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5395FAFA1D811EAE00179E40 /* Crashlytics.framework */; };
+		53EE24B11D8127E4000BDDFB /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53EE24AE1D8127E4000BDDFB /* TwitterCore.framework */; };
+		53EE24B41D812821000BDDFB /* DigitsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53EE24B21D812821000BDDFB /* DigitsKit.framework */; };
+		53EE24B51D812821000BDDFB /* DigitsKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 53EE24B31D812821000BDDFB /* DigitsKitResources.bundle */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +31,10 @@
 		533603F61D80EE3300EAE5A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5395FAF91D811EAE00179E40 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		5395FAFA1D811EAE00179E40 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
+		53D3599B1D8126E00094C935 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		53EE24AE1D8127E4000BDDFB /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		53EE24B21D812821000BDDFB /* DigitsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DigitsKit.framework; sourceTree = "<group>"; };
+		53EE24B31D812821000BDDFB /* DigitsKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = DigitsKitResources.bundle; path = DigitsKit.framework/Versions/A/Resources/DigitsKitResources.bundle; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,8 +42,10 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53EE24B11D8127E4000BDDFB /* TwitterCore.framework in Frameworks */,
 				5395FAFC1D811EAE00179E40 /* Crashlytics.framework in Frameworks */,
 				5395FAFB1D811EAE00179E40 /* Fabric.framework in Frameworks */,
+				53EE24B41D812821000BDDFB /* DigitsKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -46,10 +55,14 @@
 		533603DB1D80EE3300EAE5A6 = {
 			isa = PBXGroup;
 			children = (
+				53EE24AE1D8127E4000BDDFB /* TwitterCore.framework */,
+				53D3599B1D8126E00094C935 /* TwitterCore.framework */,
 				5395FAF91D811EAE00179E40 /* Fabric.framework */,
 				5395FAFA1D811EAE00179E40 /* Crashlytics.framework */,
 				533603E61D80EE3300EAE5A6 /* iOSTrial&Error */,
 				533603E51D80EE3300EAE5A6 /* Products */,
+				53EE24B21D812821000BDDFB /* DigitsKit.framework */,
+				53EE24B31D812821000BDDFB /* DigitsKitResources.bundle */,
 			);
 			sourceTree = "<group>";
 		};
@@ -134,6 +147,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53EE24B51D812821000BDDFB /* DigitsKitResources.bundle in Resources */,
 				533603F51D80EE3300EAE5A6 /* LaunchScreen.storyboard in Resources */,
 				533603F21D80EE3300EAE5A6 /* Assets.xcassets in Resources */,
 				533603ED1D80EE3300EAE5A6 /* Main.storyboard in Resources */,
