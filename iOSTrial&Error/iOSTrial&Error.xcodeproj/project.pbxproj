@@ -13,6 +13,8 @@
 		533603F01D80EE3300EAE5A6 /* iOSTrial_Error.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 533603EE1D80EE3300EAE5A6 /* iOSTrial_Error.xcdatamodeld */; };
 		533603F21D80EE3300EAE5A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 533603F11D80EE3300EAE5A6 /* Assets.xcassets */; };
 		533603F51D80EE3300EAE5A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 533603F31D80EE3300EAE5A6 /* LaunchScreen.storyboard */; };
+		5395FAFB1D811EAE00179E40 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5395FAF91D811EAE00179E40 /* Fabric.framework */; };
+		5395FAFC1D811EAE00179E40 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5395FAFA1D811EAE00179E40 /* Crashlytics.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		533603F11D80EE3300EAE5A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		533603F41D80EE3300EAE5A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		533603F61D80EE3300EAE5A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5395FAF91D811EAE00179E40 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
+		5395FAFA1D811EAE00179E40 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +35,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5395FAFC1D811EAE00179E40 /* Crashlytics.framework in Frameworks */,
+				5395FAFB1D811EAE00179E40 /* Fabric.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +46,8 @@
 		533603DB1D80EE3300EAE5A6 = {
 			isa = PBXGroup;
 			children = (
+				5395FAF91D811EAE00179E40 /* Fabric.framework */,
+				5395FAFA1D811EAE00179E40 /* Crashlytics.framework */,
 				533603E61D80EE3300EAE5A6 /* iOSTrial&Error */,
 				533603E51D80EE3300EAE5A6 /* Products */,
 			);
@@ -77,6 +85,7 @@
 				533603E01D80EE3300EAE5A6 /* Sources */,
 				533603E11D80EE3300EAE5A6 /* Frameworks */,
 				533603E21D80EE3300EAE5A6 /* Resources */,
+				5395FAF71D811E6B00179E40 /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -132,6 +141,22 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5395FAF71D811E6B00179E40 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "./Fabric.framework/run fe391bd4eebd9be02aaebc8ac9e7f8938d2e9235 50e968bf2560b0ba51fbdb670fafb4084fddfe0bebd5232f5227abc699e628ac";
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		533603E01D80EE3300EAE5A6 /* Sources */ = {
@@ -255,6 +280,11 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "iOSTrial&Error/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "TeamTrial-Error.iOSTrial-Error";
@@ -266,6 +296,10 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				INFOPLIST_FILE = "iOSTrial&Error/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "TeamTrial-Error.iOSTrial-Error";
@@ -292,6 +326,7 @@
 				533603FB1D80EE3300EAE5A6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
