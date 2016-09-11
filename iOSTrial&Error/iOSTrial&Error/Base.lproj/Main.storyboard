@@ -4,23 +4,82 @@
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="Luna.ttf">
+            <string>Luna</string>
+        </mutableArray>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Landing Page View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="iOSTrial_Error" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="LandingPageViewController" customModule="iOSTrial_Error" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LandingPageBackground" translatesAutoresizingMaskIntoConstraints="NO" id="dNQ-Za-OPc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="667" id="Jec-zF-hq2"/>
+                                    <constraint firstAttribute="width" constant="375" id="qOe-PC-r9r"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="newschef" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofp-AG-JTg">
+                                <rect key="frame" x="83" y="160" width="209" height="68"/>
+                                <fontDescription key="fontDescription" name="Luna" family="Luna" pointSize="33"/>
+                                <color key="textColor" red="0.97419011780104714" green="0.31834369689360276" blue="0.30673796224722227" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3kd-5f-s2S">
+                                <rect key="frame" x="67" y="512" width="241" height="45"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
+                                <state key="normal" title="Sign In with Phone Number">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="by signing up you agree to our " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ATo-u1-vAX">
+                                <rect key="frame" x="67" y="623" width="162.5" height="23.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEm-gp-iS4">
+                                <rect key="frame" x="230" y="620" width="73" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="Privacy Policy"/>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xEm-gp-iS4" secondAttribute="bottom" constant="17" id="28M-qG-GKj"/>
+                            <constraint firstItem="ofp-AG-JTg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="140" id="5r7-ed-NbQ"/>
+                            <constraint firstItem="dNQ-Za-OPc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="80w-1u-uzn"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ATo-u1-vAX" secondAttribute="bottom" constant="22.5" id="9o5-wx-Gbj"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3kd-5f-s2S" secondAttribute="bottom" constant="110" id="LP5-jt-ett"/>
+                            <constraint firstItem="ofp-AG-JTg" firstAttribute="centerX" secondItem="dNQ-Za-OPc" secondAttribute="centerX" id="R48-6N-Tfg"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dNQ-Za-OPc" secondAttribute="bottom" id="VRl-dT-9E4"/>
+                            <constraint firstItem="dNQ-Za-OPc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eSK-Ef-Epr"/>
+                            <constraint firstAttribute="trailing" secondItem="dNQ-Za-OPc" secondAttribute="trailing" id="vZA-uK-NXz"/>
+                            <constraint firstItem="3kd-5f-s2S" firstAttribute="centerX" secondItem="dNQ-Za-OPc" secondAttribute="centerX" id="zIv-YJ-diy"/>
+                        </constraints>
                     </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                    <connections>
+                        <outlet property="signInButton" destination="3kd-5f-s2S" id="N4k-s0-Oob"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="541.5" y="418.5"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="LandingPageBackground" width="2560" height="1920"/>
+    </resources>
 </document>

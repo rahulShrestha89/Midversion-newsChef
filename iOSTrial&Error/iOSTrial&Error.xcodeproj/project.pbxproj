@@ -8,33 +8,37 @@
 
 /* Begin PBXBuildFile section */
 		533603E81D80EE3300EAE5A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533603E71D80EE3300EAE5A6 /* AppDelegate.swift */; };
-		533603EA1D80EE3300EAE5A6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533603E91D80EE3300EAE5A6 /* ViewController.swift */; };
 		533603ED1D80EE3300EAE5A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 533603EB1D80EE3300EAE5A6 /* Main.storyboard */; };
 		533603F01D80EE3300EAE5A6 /* iOSTrial_Error.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 533603EE1D80EE3300EAE5A6 /* iOSTrial_Error.xcdatamodeld */; };
 		533603F21D80EE3300EAE5A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 533603F11D80EE3300EAE5A6 /* Assets.xcassets */; };
 		533603F51D80EE3300EAE5A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 533603F31D80EE3300EAE5A6 /* LaunchScreen.storyboard */; };
+		536F4A2C1D85E857006093A0 /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F4A2B1D85E857006093A0 /* LandingPageViewController.swift */; };
+		536F4A2E1D85FE1D006093A0 /* Luna.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 536F4A2D1D85FD8D006093A0 /* Luna.ttf */; };
+		536F4A301D8602D6006093A0 /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F4A2F1D8602D6006093A0 /* ColorConstants.swift */; };
 		5395FAFB1D811EAE00179E40 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5395FAF91D811EAE00179E40 /* Fabric.framework */; };
 		5395FAFC1D811EAE00179E40 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5395FAFA1D811EAE00179E40 /* Crashlytics.framework */; };
-		53EE24B11D8127E4000BDDFB /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53EE24AE1D8127E4000BDDFB /* TwitterCore.framework */; };
 		53EE24B41D812821000BDDFB /* DigitsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53EE24B21D812821000BDDFB /* DigitsKit.framework */; };
 		53EE24B51D812821000BDDFB /* DigitsKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 53EE24B31D812821000BDDFB /* DigitsKitResources.bundle */; };
+		53FD70201D85CC0E00559FF3 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53FD701F1D85CC0E00559FF3 /* TwitterCore.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		533603E41D80EE3300EAE5A6 /* iOSTrial&Error.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOSTrial&Error.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		533603E71D80EE3300EAE5A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		533603E91D80EE3300EAE5A6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		533603EC1D80EE3300EAE5A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		533603EF1D80EE3300EAE5A6 /* iOSTrial_Error.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = iOSTrial_Error.xcdatamodel; sourceTree = "<group>"; };
 		533603F11D80EE3300EAE5A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		533603F41D80EE3300EAE5A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		533603F61D80EE3300EAE5A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		536F4A2B1D85E857006093A0 /* LandingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
+		536F4A2D1D85FD8D006093A0 /* Luna.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Luna.ttf; sourceTree = "<group>"; };
+		536F4A2F1D8602D6006093A0 /* ColorConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
 		5395FAF91D811EAE00179E40 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		5395FAFA1D811EAE00179E40 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
 		53D3599B1D8126E00094C935 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
-		53EE24AE1D8127E4000BDDFB /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 		53EE24B21D812821000BDDFB /* DigitsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DigitsKit.framework; sourceTree = "<group>"; };
 		53EE24B31D812821000BDDFB /* DigitsKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = DigitsKitResources.bundle; path = DigitsKit.framework/Versions/A/Resources/DigitsKitResources.bundle; sourceTree = "<group>"; };
+		53FD701F1D85CC0E00559FF3 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,8 +46,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				53EE24B11D8127E4000BDDFB /* TwitterCore.framework in Frameworks */,
 				5395FAFC1D811EAE00179E40 /* Crashlytics.framework in Frameworks */,
+				53FD70201D85CC0E00559FF3 /* TwitterCore.framework in Frameworks */,
 				5395FAFB1D811EAE00179E40 /* Fabric.framework in Frameworks */,
 				53EE24B41D812821000BDDFB /* DigitsKit.framework in Frameworks */,
 			);
@@ -55,7 +59,7 @@
 		533603DB1D80EE3300EAE5A6 = {
 			isa = PBXGroup;
 			children = (
-				53EE24AE1D8127E4000BDDFB /* TwitterCore.framework */,
+				53FD701F1D85CC0E00559FF3 /* TwitterCore.framework */,
 				53D3599B1D8126E00094C935 /* TwitterCore.framework */,
 				5395FAF91D811EAE00179E40 /* Fabric.framework */,
 				5395FAFA1D811EAE00179E40 /* Crashlytics.framework */,
@@ -77,15 +81,41 @@
 		533603E61D80EE3300EAE5A6 /* iOSTrial&Error */ = {
 			isa = PBXGroup;
 			children = (
+				53FD70231D85CCC100559FF3 /* Constants */,
+				53FD70221D85CCAE00559FF3 /* Controllers */,
+				53FD70211D85CCA500559FF3 /* Models */,
 				533603E71D80EE3300EAE5A6 /* AppDelegate.swift */,
-				533603E91D80EE3300EAE5A6 /* ViewController.swift */,
 				533603EB1D80EE3300EAE5A6 /* Main.storyboard */,
 				533603F11D80EE3300EAE5A6 /* Assets.xcassets */,
+				536F4A2D1D85FD8D006093A0 /* Luna.ttf */,
 				533603F31D80EE3300EAE5A6 /* LaunchScreen.storyboard */,
 				533603F61D80EE3300EAE5A6 /* Info.plist */,
 				533603EE1D80EE3300EAE5A6 /* iOSTrial_Error.xcdatamodeld */,
 			);
 			path = "iOSTrial&Error";
+			sourceTree = "<group>";
+		};
+		53FD70211D85CCA500559FF3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		53FD70221D85CCAE00559FF3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				536F4A2B1D85E857006093A0 /* LandingPageViewController.swift */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		53FD70231D85CCC100559FF3 /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+				536F4A2F1D8602D6006093A0 /* ColorConstants.swift */,
+			);
+			name = Constants;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -148,6 +178,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				53EE24B51D812821000BDDFB /* DigitsKitResources.bundle in Resources */,
+				536F4A2E1D85FE1D006093A0 /* Luna.ttf in Resources */,
 				533603F51D80EE3300EAE5A6 /* LaunchScreen.storyboard in Resources */,
 				533603F21D80EE3300EAE5A6 /* Assets.xcassets in Resources */,
 				533603ED1D80EE3300EAE5A6 /* Main.storyboard in Resources */,
@@ -177,9 +208,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				533603EA1D80EE3300EAE5A6 /* ViewController.swift in Sources */,
 				533603F01D80EE3300EAE5A6 /* iOSTrial_Error.xcdatamodeld in Sources */,
+				536F4A2C1D85E857006093A0 /* LandingPageViewController.swift in Sources */,
 				533603E81D80EE3300EAE5A6 /* AppDelegate.swift in Sources */,
+				536F4A301D8602D6006093A0 /* ColorConstants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
