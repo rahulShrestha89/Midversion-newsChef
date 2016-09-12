@@ -3,6 +3,7 @@
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
     </dependencies>
     <customFonts key="customFonts">
         <mutableArray key="Luna.ttf">
@@ -36,34 +37,46 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3kd-5f-s2S">
-                                <rect key="frame" x="67" y="512" width="241" height="45"/>
+                                <rect key="frame" x="67" y="492" width="241" height="45"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
                                 <state key="normal" title="Sign In with Phone Number">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="by signing up you agree to our " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ATo-u1-vAX">
-                                <rect key="frame" x="67" y="623" width="162.5" height="23.5"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEm-gp-iS4">
+                                <rect key="frame" x="258" y="623" width="73" height="30"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                <state key="normal" title="Privacy Policy"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xB-yf-1df">
+                                <rect key="frame" x="67.5" y="558" width="240" height="45"/>
+                                <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
+                                <inset key="contentEdgeInsets" minX="68" minY="10" maxX="68" maxY="10"/>
+                                <state key="normal" title="Look Around">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="by signing up you agree to our " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ATo-u1-vAX">
+                                <rect key="frame" x="87" y="623" width="162.5" height="23.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEm-gp-iS4">
-                                <rect key="frame" x="230" y="620" width="73" height="30"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                <state key="normal" title="Privacy Policy"/>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xEm-gp-iS4" secondAttribute="bottom" constant="17" id="28M-qG-GKj"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xEm-gp-iS4" secondAttribute="bottom" constant="16" id="28M-qG-GKj"/>
                             <constraint firstItem="ofp-AG-JTg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="140" id="5r7-ed-NbQ"/>
                             <constraint firstItem="dNQ-Za-OPc" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="80w-1u-uzn"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="ATo-u1-vAX" secondAttribute="bottom" constant="22.5" id="9o5-wx-Gbj"/>
-                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3kd-5f-s2S" secondAttribute="bottom" constant="110" id="LP5-jt-ett"/>
+                            <constraint firstItem="5xB-yf-1df" firstAttribute="centerX" secondItem="dNQ-Za-OPc" secondAttribute="centerX" id="B3w-69-ip1"/>
+                            <constraint firstItem="xEm-gp-iS4" firstAttribute="leading" secondItem="ATo-u1-vAX" secondAttribute="trailing" constant="0.5" id="Dou-Lh-Lhb"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="3kd-5f-s2S" secondAttribute="bottom" constant="130" id="LP5-jt-ett"/>
+                            <constraint firstItem="ATo-u1-vAX" firstAttribute="top" secondItem="5xB-yf-1df" secondAttribute="bottom" constant="28" id="LZN-mD-8sN"/>
                             <constraint firstItem="ofp-AG-JTg" firstAttribute="centerX" secondItem="dNQ-Za-OPc" secondAttribute="centerX" id="R48-6N-Tfg"/>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="dNQ-Za-OPc" secondAttribute="bottom" id="VRl-dT-9E4"/>
+                            <constraint firstItem="ATo-u1-vAX" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="68" id="bQ0-to-idW"/>
                             <constraint firstItem="dNQ-Za-OPc" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="eSK-Ef-Epr"/>
                             <constraint firstAttribute="trailing" secondItem="dNQ-Za-OPc" secondAttribute="trailing" id="vZA-uK-NXz"/>
                             <constraint firstItem="3kd-5f-s2S" firstAttribute="centerX" secondItem="dNQ-Za-OPc" secondAttribute="centerX" id="zIv-YJ-diy"/>
@@ -71,6 +84,7 @@
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
+                        <outlet property="lookAroundButton" destination="5xB-yf-1df" id="N7U-Kg-Jvh"/>
                         <outlet property="signInButton" destination="3kd-5f-s2S" id="N4k-s0-Oob"/>
                     </connections>
                 </viewController>

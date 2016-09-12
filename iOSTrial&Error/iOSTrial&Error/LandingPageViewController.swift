@@ -14,15 +14,19 @@ class LandingPageViewController: UIViewController {
     
     @IBOutlet weak var signInButton: UIButton!
  
+    @IBOutlet weak var lookAroundButton: UIButton!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         decorateButton(signInButton, color: UIColor.newsChefGreenColor())
         
+        decorateButton(lookAroundButton, color: UIColor.newsChefBlueColor())
+        
     }
 
 }
+
 
 private func decorateButton(button: UIButton, color: UIColor) {
     // Draw the border around a button.
