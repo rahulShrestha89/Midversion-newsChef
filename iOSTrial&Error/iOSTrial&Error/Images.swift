@@ -9,9 +9,14 @@
 import Foundation
 import UIKit
 
+
+// USAGE
+// UIImage.Asset.Wallet.rawValue
+
 extension UIImage {
     enum Asset: String {
-        case test = "test_image"
+
+        case Wallet = "Wallet"
 
         
         var image: UIImage {
@@ -23,3 +28,5 @@ extension UIImage {
         self.init(named: asset.rawValue)
     }
 }
+
+

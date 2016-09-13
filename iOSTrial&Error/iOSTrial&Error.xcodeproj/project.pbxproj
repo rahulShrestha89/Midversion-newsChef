@@ -92,18 +92,26 @@
 		533603E61D80EE3300EAE5A6 /* iOSTrial&Error */ = {
 			isa = PBXGroup;
 			children = (
+				536E9D2C1D87A8370060D66F /* Assets */,
 				53FD70231D85CCC100559FF3 /* Constants */,
 				53FD70221D85CCAE00559FF3 /* Controllers */,
 				53FD70211D85CCA500559FF3 /* Models */,
 				533603E71D80EE3300EAE5A6 /* AppDelegate.swift */,
 				533603EB1D80EE3300EAE5A6 /* Main.storyboard */,
-				533603F11D80EE3300EAE5A6 /* Assets.xcassets */,
-				536F4A2D1D85FD8D006093A0 /* Luna.ttf */,
 				533603F31D80EE3300EAE5A6 /* LaunchScreen.storyboard */,
 				533603F61D80EE3300EAE5A6 /* Info.plist */,
 				533603EE1D80EE3300EAE5A6 /* iOSTrial_Error.xcdatamodeld */,
 			);
 			path = "iOSTrial&Error";
+			sourceTree = "<group>";
+		};
+		536E9D2C1D87A8370060D66F /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				536F4A2D1D85FD8D006093A0 /* Luna.ttf */,
+				533603F11D80EE3300EAE5A6 /* Assets.xcassets */,
+			);
+			name = Assets;
 			sourceTree = "<group>";
 		};
 		53FD70211D85CCA500559FF3 /* Models */ = {

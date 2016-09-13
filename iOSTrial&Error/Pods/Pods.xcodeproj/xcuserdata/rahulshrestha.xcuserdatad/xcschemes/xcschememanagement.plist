@@ -9,20 +9,10 @@
 			<key>isShown</key>
 			<false/>
 		</dict>
-		<key>paper-onboarding.xcscheme</key>
-		<dict>
-			<key>isShown</key>
-			<false/>
-		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
-		<key>A74A594E614C9AAEA92182E65FCCDCE3</key>
-		<dict>
-			<key>primary</key>
-			<true/>
-		</dict>
-		<key>ECEF58261CE28107B53ECAE7205CE3DA</key>
+		<key>EC27EF8A85A8A61387E75B7122E09173</key>
 		<dict>
 			<key>primary</key>
 			<true/>

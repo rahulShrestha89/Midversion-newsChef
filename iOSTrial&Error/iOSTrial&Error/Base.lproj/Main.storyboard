@@ -56,6 +56,10 @@
                                 <state key="normal" title="Look Around">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="onLookAroundButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bRy-cj-5j0"/>
+                                    <segue destination="y27-8j-t9o" kind="presentation" identifier="showLookAround" id="2sh-GU-hVX"/>
+                                </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="by signing up you agree to our " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ATo-u1-vAX">
                                 <rect key="frame" x="87" y="623" width="162.5" height="23.5"/>
@@ -90,7 +94,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="541.5" y="418.5"/>
+            <point key="canvasLocation" x="273.5" y="418.5"/>
+        </scene>
+        <!--Look Around View Controller-->
+        <scene sceneID="E6w-5n-gHb">
+            <objects>
+                <viewController id="y27-8j-t9o" customClass="LookAroundViewController" customModule="iOSTrial_Error" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lBW-7K-PNG"/>
+                        <viewControllerLayoutGuide type="bottom" id="YDT-f6-7up"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="lIh-mE-qmb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rXo-zB-ydn" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="770.5" y="111.5"/>
         </scene>
     </scenes>
     <resources>

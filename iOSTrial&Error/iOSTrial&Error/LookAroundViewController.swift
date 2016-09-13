@@ -7,16 +7,13 @@
 //
 
 import UIKit
-import paper_onboarding
 
 class LookAroundViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        // Do any additional setup after loading the view.
     }
-
 
 }
 

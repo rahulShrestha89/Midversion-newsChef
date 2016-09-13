@@ -1,15 +1,12 @@
 PODS:
-  - paper-onboarding (1.1.3)
   - SwiftGen (3.0.0)
 
 DEPENDENCIES:
-  - paper-onboarding
   - SwiftGen
 
 SPEC CHECKSUMS:
-  paper-onboarding: e7c5683bf2c84eb9424f626579564e4c0a20d34a
   SwiftGen: f679cd0ed4173a5da3b01efd0da23542bf82f6ab
 
-PODFILE CHECKSUM: 1a82335b75cfbefc54314d152af4463dc3017aab
+PODFILE CHECKSUM: ae75d04d9380d497f86e40281852a2577e384b24
 
 COCOAPODS: 1.0.1
