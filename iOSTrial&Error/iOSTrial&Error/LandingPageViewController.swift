@@ -15,10 +15,7 @@ class LandingPageViewController: UIViewController {
     @IBOutlet weak var signInButton: UIButton!
  
     @IBOutlet weak var lookAroundButton: UIButton!
-    
-    @IBAction func onLookAroundButtonTapped(sender: AnyObject) {
-        self.performSegueWithIdentifier("showLookAround", sender: self)
-    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -28,6 +25,9 @@ class LandingPageViewController: UIViewController {
         
     }
 
+    @IBAction func onLookAroundButtonPressed(sender: AnyObject) {
+        self.performSegueWithIdentifier("showLookAround", sender: self)
+    }
 }
 
 

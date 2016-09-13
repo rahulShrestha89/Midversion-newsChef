@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5313C4641D88028300D434DB /* LookUpChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5313C4631D88028300D434DB /* LookUpChildViewController.swift */; };
 		533603E81D80EE3300EAE5A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533603E71D80EE3300EAE5A6 /* AppDelegate.swift */; };
 		533603ED1D80EE3300EAE5A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 533603EB1D80EE3300EAE5A6 /* Main.storyboard */; };
 		533603F01D80EE3300EAE5A6 /* iOSTrial_Error.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 533603EE1D80EE3300EAE5A6 /* iOSTrial_Error.xcdatamodeld */; };
@@ -17,7 +18,7 @@
 		536F4A301D8602D6006093A0 /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F4A2F1D8602D6006093A0 /* ColorConstants.swift */; };
 		5395FAFB1D811EAE00179E40 /* Fabric.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5395FAF91D811EAE00179E40 /* Fabric.framework */; };
 		5395FAFC1D811EAE00179E40 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5395FAFA1D811EAE00179E40 /* Crashlytics.framework */; };
-		53AF09EC1D87796500FF07D6 /* LookAroundViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AF09EB1D87796500FF07D6 /* LookAroundViewController.swift */; };
+		53AF09EC1D87796500FF07D6 /* LookAroundPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AF09EB1D87796500FF07D6 /* LookAroundPageViewController.swift */; };
 		53AF09F01D87A59F00FF07D6 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AF09EF1D87A59F00FF07D6 /* Images.swift */; };
 		53EE24B41D812821000BDDFB /* DigitsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53EE24B21D812821000BDDFB /* DigitsKit.framework */; };
 		53EE24B51D812821000BDDFB /* DigitsKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 53EE24B31D812821000BDDFB /* DigitsKitResources.bundle */; };
@@ -28,6 +29,7 @@
 /* Begin PBXFileReference section */
 		2EF9F97F6C4305FEC93232F2 /* Pods-iOSTrial&Error.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTrial&Error.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSTrial&Error/Pods-iOSTrial&Error.release.xcconfig"; sourceTree = "<group>"; };
 		52EE189B19CB3F257CAF79EA /* Pods_iOSTrial_Error.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSTrial_Error.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5313C4631D88028300D434DB /* LookUpChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LookUpChildViewController.swift; sourceTree = "<group>"; };
 		533603E41D80EE3300EAE5A6 /* iOSTrial&Error.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOSTrial&Error.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		533603E71D80EE3300EAE5A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		533603EC1D80EE3300EAE5A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -40,7 +42,7 @@
 		536F4A2F1D8602D6006093A0 /* ColorConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
 		5395FAF91D811EAE00179E40 /* Fabric.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Fabric.framework; sourceTree = "<group>"; };
 		5395FAFA1D811EAE00179E40 /* Crashlytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Crashlytics.framework; sourceTree = "<group>"; };
-		53AF09EB1D87796500FF07D6 /* LookAroundViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LookAroundViewController.swift; sourceTree = "<group>"; };
+		53AF09EB1D87796500FF07D6 /* LookAroundPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LookAroundPageViewController.swift; sourceTree = "<group>"; };
 		53AF09EF1D87A59F00FF07D6 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		53D3599B1D8126E00094C935 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 		53EE24B21D812821000BDDFB /* DigitsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DigitsKit.framework; sourceTree = "<group>"; };
@@ -125,7 +127,8 @@
 			isa = PBXGroup;
 			children = (
 				536F4A2B1D85E857006093A0 /* LandingPageViewController.swift */,
-				53AF09EB1D87796500FF07D6 /* LookAroundViewController.swift */,
+				53AF09EB1D87796500FF07D6 /* LookAroundPageViewController.swift */,
+				5313C4631D88028300D434DB /* LookUpChildViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -310,7 +313,8 @@
 			files = (
 				533603F01D80EE3300EAE5A6 /* iOSTrial_Error.xcdatamodeld in Sources */,
 				53AF09F01D87A59F00FF07D6 /* Images.swift in Sources */,
-				53AF09EC1D87796500FF07D6 /* LookAroundViewController.swift in Sources */,
+				53AF09EC1D87796500FF07D6 /* LookAroundPageViewController.swift in Sources */,
+				5313C4641D88028300D434DB /* LookUpChildViewController.swift in Sources */,
 				536F4A2C1D85E857006093A0 /* LandingPageViewController.swift in Sources */,
 				533603E81D80EE3300EAE5A6 /* AppDelegate.swift in Sources */,
 				536F4A301D8602D6006093A0 /* ColorConstants.swift in Sources */,
