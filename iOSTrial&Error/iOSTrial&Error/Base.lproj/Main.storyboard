@@ -1,14 +1,15 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <mutableArray key="Luna.ttf">
+        <array key="Luna.ttf">
             <string>Luna</string>
-        </mutableArray>
+        </array>
     </customFonts>
     <scenes>
         <!--Landing Page View Controller-->
@@ -24,37 +25,33 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="LandingPageBackground" translatesAutoresizingMaskIntoConstraints="NO" id="dNQ-Za-OPc">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="667" id="Jec-zF-hq2"/>
                                     <constraint firstAttribute="width" constant="375" id="qOe-PC-r9r"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="newschef" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofp-AG-JTg">
-                                <rect key="frame" x="83" y="160" width="209" height="68"/>
                                 <fontDescription key="fontDescription" name="Luna" family="Luna" pointSize="33"/>
-                                <color key="textColor" red="0.97419011780104714" green="0.31834369689360276" blue="0.30673796224722227" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.97419011780104714" green="0.31834369689360276" blue="0.30673796224722227" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3kd-5f-s2S">
-                                <rect key="frame" x="67" y="492" width="241" height="45"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
                                 <state key="normal" title="Sign In with Phone Number">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xEm-gp-iS4">
-                                <rect key="frame" x="258" y="623" width="73" height="30"/>
+                                <frame key="frameInset" minX="258" minY="623" width="73" height="30"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
                                 <state key="normal" title="Privacy Policy"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xB-yf-1df">
-                                <rect key="frame" x="67.5" y="558" width="240" height="45"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                 <inset key="contentEdgeInsets" minX="68" minY="10" maxX="68" maxY="10"/>
                                 <state key="normal" title="Look Around">
-                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
                                     <action selector="onLookAroundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ivh-M6-7iB"/>
@@ -62,13 +59,13 @@
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="by signing up you agree to our " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ATo-u1-vAX">
-                                <rect key="frame" x="87" y="623" width="162.5" height="23.5"/>
+                                <frame key="frameInset" minX="87" minY="623" width="162.5" height="23.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="11"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="xEm-gp-iS4" secondAttribute="bottom" constant="16" id="28M-qG-GKj"/>
                             <constraint firstItem="ofp-AG-JTg" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="140" id="5r7-ed-NbQ"/>
@@ -86,7 +83,6 @@
                             <constraint firstItem="3kd-5f-s2S" firstAttribute="centerX" secondItem="dNQ-Za-OPc" secondAttribute="centerX" id="zIv-YJ-diy"/>
                         </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="lookAroundButton" destination="5xB-yf-1df" id="N7U-Kg-Jvh"/>
                         <outlet property="signInButton" destination="3kd-5f-s2S" id="N4k-s0-Oob"/>
@@ -99,9 +95,7 @@
         <!--Look Around Page View Controller-->
         <scene sceneID="aBD-Z7-psQ">
             <objects>
-                <pageViewController storyboardIdentifier="LookAroundPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="0eQ-cw-l6s" customClass="LookAroundPageViewController" customModule="iOSTrial_Error" customModuleProvider="target" sceneMemberID="viewController">
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
-                </pageViewController>
+                <pageViewController storyboardIdentifier="LookAroundPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="0eQ-cw-l6s" customClass="LookAroundPageViewController" customModule="iOSTrial_Error" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HQa-xU-Fcq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="705.5" y="178.5"/>
@@ -119,26 +113,23 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZPI-PP-aDK">
-                                <rect key="frame" x="67" y="110" width="240" height="200"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="200" id="DGS-UN-uoB"/>
                                     <constraint firstAttribute="width" constant="240" id="lAu-6H-4Ce"/>
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dR-uk-FyO">
-                                <rect key="frame" x="164" y="411" width="46" height="29"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Description" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jUB-EA-XWL">
-                                <rect key="frame" x="143.5" y="495" width="88" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="ZPI-PP-aDK" firstAttribute="top" secondItem="Pff-IK-m7G" secondAttribute="bottom" constant="90" id="8mN-zJ-j8X"/>
                             <constraint firstItem="jUB-EA-XWL" firstAttribute="top" secondItem="7dR-uk-FyO" secondAttribute="bottom" constant="55" id="LTd-gy-2hn"/>
@@ -148,7 +139,6 @@
                             <constraint firstItem="jUB-EA-XWL" firstAttribute="centerX" secondItem="q7h-dV-JZt" secondAttribute="centerX" id="xVP-2R-Dol"/>
                         </constraints>
                     </view>
-                    <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina47"/>
                     <connections>
                         <outlet property="imageView" destination="ZPI-PP-aDK" id="0fl-NN-a1A"/>
                         <outlet property="mainTextView" destination="7dR-uk-FyO" id="ATe-zd-kZ2"/>
@@ -161,6 +151,6 @@
         </scene>
     </scenes>
     <resources>
-        <image name="LandingPageBackground" width="2560" height="1920"/>
+        <image name="LandingPageBackground" width="1280" height="960"/>
     </resources>
 </document>

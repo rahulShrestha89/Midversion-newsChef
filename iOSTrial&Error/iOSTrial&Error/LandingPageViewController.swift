@@ -25,16 +25,16 @@ class LandingPageViewController: UIViewController {
         
     }
 
-    @IBAction func onLookAroundButtonPressed(sender: AnyObject) {
-        self.performSegueWithIdentifier("showLookAround", sender: self)
+    @IBAction func onLookAroundButtonPressed(_ sender: AnyObject) {
+        self.performSegue(withIdentifier: "showLookAround", sender: self)
     }
 }
 
 
-private func decorateButton(button: UIButton, color: UIColor) {
+private func decorateButton(_ button: UIButton, color: UIColor) {
     // Draw the border around a button.
     button.layer.masksToBounds = false
-    button.layer.borderColor = color.CGColor
+    button.layer.borderColor = color.cgColor
     button.layer.borderWidth = 2
     button.layer.cornerRadius = 6
     button.backgroundColor = color

@@ -25,10 +25,10 @@ class LookAroundPageViewController: UIPageViewController , UIPageViewControllerD
         
     }
     
-    override func viewDidAppear (animated: Bool) {
+    override func viewDidAppear (_ animated: Bool) {
         
-        dispatch_async(dispatch_get_main_queue()) {
-            self.setViewControllers([self.getViewControllerAtIndex(0)] as [UIViewController], direction: UIPageViewControllerNavigationDirection.Forward, animated: false, completion: nil)
+        DispatchQueue.main.async {
+            self.setViewControllers([self.getViewControllerAtIndex(0)] as [UIViewController], direction: UIPageViewControllerNavigationDirection.forward, animated: false, completion: nil)
         }
         
     }
@@ -36,28 +36,28 @@ class LookAroundPageViewController: UIPageViewController , UIPageViewControllerD
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
         
-        let subViews: NSArray = view.subviews
+        let subViews: NSArray = view.subviews as NSArray
         var scrollView: UIScrollView? = nil
         var pageControl: UIPageControl? = nil
         
         for view in subViews {
-            if view.isKindOfClass(UIScrollView) {
+            if (view as AnyObject).isKind(of: UIScrollView.self) {
                 scrollView = view as? UIScrollView
             }
-            else if view.isKindOfClass(UIPageControl) {
+            else if (view as AnyObject).isKind(of: UIPageControl.self) {
                 pageControl = view as? UIPageControl
             }
         }
         
         if (scrollView != nil && pageControl != nil) {
             scrollView?.frame = view.bounds
-            view.bringSubviewToFront(pageControl!)
+            view.bringSubview(toFront: pageControl!)
         }
     }
     
     // MARK:- UIPageViewControllerDataSource Methods
     
-    func pageViewController(pageViewController: UIPageViewController, viewControllerBeforeViewController viewController: UIViewController) -> UIViewController?
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerBefore viewController: UIViewController) -> UIViewController?
     {
         let pageContent: LookUpChildViewController = viewController as! LookUpChildViewController
         
@@ -72,15 +72,15 @@ class LookAroundPageViewController: UIPageViewController , UIPageViewControllerD
         return getViewControllerAtIndex(index)
     }
     
-    func presentationIndexForPageViewController(pageViewController: UIPageViewController) -> Int {
+    func presentationIndex(for pageViewController: UIPageViewController) -> Int {
         return 0
     }
     
-    func presentationCountForPageViewController(pageViewController: UIPageViewController) -> Int {
+    func presentationCount(for pageViewController: UIPageViewController) -> Int {
         return arrPageTitle.count
     }
     
-    func pageViewController(pageViewController: UIPageViewController, viewControllerAfterViewController viewController: UIViewController) -> UIViewController?
+    func pageViewController(_ pageViewController: UIPageViewController, viewControllerAfter viewController: UIViewController) -> UIViewController?
     {
         let pageContent: LookUpChildViewController = viewController as! LookUpChildViewController
         
@@ -100,10 +100,10 @@ class LookAroundPageViewController: UIPageViewController , UIPageViewControllerD
     }
     
     // MARK:- Other Methods
-    func getViewControllerAtIndex(index: NSInteger) -> LookUpChildViewController
+    func getViewControllerAtIndex(_ index: NSInteger) -> LookUpChildViewController
     {
         // Create a new view controller and pass suitable data.
-        let pageContentViewController = self.storyboard?.instantiateViewControllerWithIdentifier("LookUpChildViewController") as! LookUpChildViewController
+        let pageContentViewController = self.storyboard?.instantiateViewController(withIdentifier: "LookUpChildViewController") as! LookUpChildViewController
         
         pageContentViewController.strTitle = "\(arrPageTitle[index])"
         pageContentViewController.strPhotoName = "\(arrPagePhoto[index])"
