@@ -19,7 +19,7 @@ class LookAroundPageViewController: UIPageViewController , UIPageViewControllerD
         
         arrPageTitle = ["Follow News that spark your interests.","Search for News.","News based on you reading habit.","Pass anything you want!"];
         arrPagePhoto = ["topic.png","search.png","news.png","share.png"];
-        arrPageMainTitle = ["Track","LookOut","Customized","Share"];
+        arrPageMainTitle = ["Track","Look Out","Customized","Share"];
         
         self.dataSource = self
         

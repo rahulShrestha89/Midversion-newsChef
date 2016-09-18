@@ -90,7 +90,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="174.5" y="422.5"/>
+            <point key="canvasLocation" x="-55" y="500"/>
         </scene>
         <!--Look Around Page View Controller-->
         <scene sceneID="aBD-Z7-psQ">
@@ -112,12 +112,6 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="ZPI-PP-aDK">
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="DGS-UN-uoB"/>
-                                    <constraint firstAttribute="width" constant="240" id="lAu-6H-4Ce"/>
-                                </constraints>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7dR-uk-FyO">
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -128,6 +122,13 @@
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZPI-PP-aDK">
+                                <frame key="frameInset" minX="91" minY="109" width="192" height="148"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="200" id="DGS-UN-uoB"/>
+                                    <constraint firstAttribute="width" constant="240" id="lAu-6H-4Ce"/>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -147,7 +148,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MI1-Ko-vT9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1131.5" y="178.5"/>
+            <point key="canvasLocation" x="1413.5999999999999" y="177.66116941529236"/>
         </scene>
     </scenes>
     <resources>
