@@ -12,6 +12,7 @@ import DigitsKit
 
 class LandingPageViewController: UIViewController {
     
+    @IBOutlet weak var privacyPolicyButton: UIButton!
     @IBOutlet weak var signInButton: UIButton!
  
     @IBOutlet weak var lookAroundButton: UIButton!
@@ -25,10 +26,20 @@ class LandingPageViewController: UIViewController {
         
     }
 
+    @IBAction func onPrivacyPolicyButtonPressed(_ sender: AnyObject) {
+        self.performSegue(withIdentifier: "showPrivacyPolicy", sender: self)
+    }
     @IBAction func onLookAroundButtonPressed(_ sender: AnyObject) {
         self.performSegue(withIdentifier: "showLookAround", sender: self)
     }
+
+    
+    // this refers to the unwind segue from other controllers
+    // use this to unwind back
+    @IBAction func unWindToLandingPage (segue : UIStoryboardSegue){
+    }
 }
+
 
 
 private func decorateButton(_ button: UIButton, color: UIColor) {

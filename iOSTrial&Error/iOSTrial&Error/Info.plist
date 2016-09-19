@@ -51,6 +51,8 @@
 	<true/>
 	<key>UIAppFonts</key>
 	<array>
+		<string>TheLastCall.ttf</string>
+		<string>Sunrise International Demo.otf</string>
 		<string>Luna.ttf</string>
 	</array>
 	<key>UILaunchStoryboardName</key>

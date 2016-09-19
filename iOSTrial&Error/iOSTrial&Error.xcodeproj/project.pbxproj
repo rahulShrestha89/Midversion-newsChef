@@ -20,6 +20,9 @@
 		5395FAFC1D811EAE00179E40 /* Crashlytics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5395FAFA1D811EAE00179E40 /* Crashlytics.framework */; };
 		53AF09EC1D87796500FF07D6 /* LookAroundPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AF09EB1D87796500FF07D6 /* LookAroundPageViewController.swift */; };
 		53AF09F01D87A59F00FF07D6 /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53AF09EF1D87A59F00FF07D6 /* Images.swift */; };
+		53D99B4C1D90A08A00CC1FA5 /* Sunrise International Demo.otf in Resources */ = {isa = PBXBuildFile; fileRef = 53D99B4B1D90A08A00CC1FA5 /* Sunrise International Demo.otf */; };
+		53D99B4E1D90A09E00CC1FA5 /* TheLastCall.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 53D99B4D1D90A09E00CC1FA5 /* TheLastCall.ttf */; };
+		53D99B501D90A2EC00CC1FA5 /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D99B4F1D90A2EC00CC1FA5 /* PrivacyPolicyViewController.swift */; };
 		53EE24B41D812821000BDDFB /* DigitsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53EE24B21D812821000BDDFB /* DigitsKit.framework */; };
 		53EE24B51D812821000BDDFB /* DigitsKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 53EE24B31D812821000BDDFB /* DigitsKitResources.bundle */; };
 		53FD70201D85CC0E00559FF3 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53FD701F1D85CC0E00559FF3 /* TwitterCore.framework */; };
@@ -45,6 +48,9 @@
 		53AF09EB1D87796500FF07D6 /* LookAroundPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LookAroundPageViewController.swift; sourceTree = "<group>"; };
 		53AF09EF1D87A59F00FF07D6 /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
 		53D3599B1D8126E00094C935 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
+		53D99B4B1D90A08A00CC1FA5 /* Sunrise International Demo.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sunrise International Demo.otf"; sourceTree = "<group>"; };
+		53D99B4D1D90A09E00CC1FA5 /* TheLastCall.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = TheLastCall.ttf; sourceTree = "<group>"; };
+		53D99B4F1D90A2EC00CC1FA5 /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
 		53EE24B21D812821000BDDFB /* DigitsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DigitsKit.framework; sourceTree = "<group>"; };
 		53EE24B31D812821000BDDFB /* DigitsKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = DigitsKitResources.bundle; path = DigitsKit.framework/Versions/A/Resources/DigitsKitResources.bundle; sourceTree = "<group>"; };
 		53FD701F1D85CC0E00559FF3 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
@@ -110,6 +116,8 @@
 		536E9D2C1D87A8370060D66F /* Assets */ = {
 			isa = PBXGroup;
 			children = (
+				53D99B4D1D90A09E00CC1FA5 /* TheLastCall.ttf */,
+				53D99B4B1D90A08A00CC1FA5 /* Sunrise International Demo.otf */,
 				536F4A2D1D85FD8D006093A0 /* Luna.ttf */,
 				533603F11D80EE3300EAE5A6 /* Assets.xcassets */,
 			);
@@ -129,6 +137,7 @@
 				536F4A2B1D85E857006093A0 /* LandingPageViewController.swift */,
 				53AF09EB1D87796500FF07D6 /* LookAroundPageViewController.swift */,
 				5313C4631D88028300D434DB /* LookUpChildViewController.swift */,
+				53D99B4F1D90A2EC00CC1FA5 /* PrivacyPolicyViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -225,11 +234,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				53D99B4E1D90A09E00CC1FA5 /* TheLastCall.ttf in Resources */,
 				53EE24B51D812821000BDDFB /* DigitsKitResources.bundle in Resources */,
 				536F4A2E1D85FE1D006093A0 /* Luna.ttf in Resources */,
 				533603F51D80EE3300EAE5A6 /* LaunchScreen.storyboard in Resources */,
 				533603F21D80EE3300EAE5A6 /* Assets.xcassets in Resources */,
 				533603ED1D80EE3300EAE5A6 /* Main.storyboard in Resources */,
+				53D99B4C1D90A08A00CC1FA5 /* Sunrise International Demo.otf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -317,6 +328,7 @@
 				533603F01D80EE3300EAE5A6 /* iOSTrial_Error.xcdatamodeld in Sources */,
 				53AF09F01D87A59F00FF07D6 /* Images.swift in Sources */,
 				53AF09EC1D87796500FF07D6 /* LookAroundPageViewController.swift in Sources */,
+				53D99B501D90A2EC00CC1FA5 /* PrivacyPolicyViewController.swift in Sources */,
 				5313C4641D88028300D434DB /* LookUpChildViewController.swift in Sources */,
 				536F4A2C1D85E857006093A0 /* LandingPageViewController.swift in Sources */,
 				533603E81D80EE3300EAE5A6 /* AppDelegate.swift in Sources */,
