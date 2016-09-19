@@ -1,4 +1,4 @@
-#!/Users/PrayushPokharel/API/bin/python3.5
+#!/Users/PrayushPokharel/411/combinedrepo-trialanderror/API/bin/python3.5
 from django.core import management
 
 if __name__ == "__main__":

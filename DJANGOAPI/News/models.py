@@ -30,5 +30,5 @@ def save(self, *args, **kwargs):
 	lineos = self.lineos and 'table' or False
 	options = self.title and {'title':self.title} or {}
 	formatters = HtmlFormatter(style=self.style, lineos=lineos, full=True, **options)
-	self.highlighted = highlight(self.code, lexer, formatter)
+	self.highlighted = highlight(self.code, lexer, formatters)
 	super(New, self).save(*args,**kwargs)

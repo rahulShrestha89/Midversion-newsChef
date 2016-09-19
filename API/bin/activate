@@ -40,7 +40,7 @@ deactivate () {
 # unset irrelevant variables
 deactivate nondestructive
 
-VIRTUAL_ENV="/Users/PrayushPokharel/API"
+VIRTUAL_ENV="/Users/PrayushPokharel/411/combinedrepo-trialanderror/API"
 export VIRTUAL_ENV
 
 _OLD_VIRTUAL_PATH="$PATH"

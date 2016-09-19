@@ -1,20 +1,18 @@
-from django.conf.urls import url
-from rest_framework.urlpatterns import format_suffix_patterns
-from News import views as NewView
-from django.conf.urls import include
+from django.conf.urls import url, include
+from News import views
+from rest_framework.routers import DefaultRouter
 
+# Create a router and register our viewsets with it.
+router = DefaultRouter(schema_title='Pastebin API')
+router.register(r'News', views.NewViewSet)
+router.register(r'users',views.UserViewSet)
+
+
+# The API URLs are now determined automatically by the router. 
+# Additionally, we include the login URLs for the browsable API.
 urlpatterns = [
-	url(r'^News/$', NewView.NewList.as_view()),
-	url(r'^News/(?P<pk>[0-9]+)/$', NewView.NewDetail.as_view()),
-	url(r'^users/$', NewView.UserList.as_view()),
-	url(r'^users/(?P<pk>[0-9]+)/$', NewView.UserDetail.as_view()),
+url(r'^', include(router.urls)),
+url(r'^api-auth/', include('rest_framework.urls', namespace ='rest_framework'))
 ]
-
-urlpatterns = format_suffix_patterns(urlpatterns)
-urlpatterns += [
-	url(r'^api-auth/', include('rest_framework.urls')),
-]
-
-
 
 
