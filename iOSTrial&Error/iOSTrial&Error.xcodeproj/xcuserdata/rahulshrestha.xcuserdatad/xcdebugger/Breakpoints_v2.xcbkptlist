@@ -15,7 +15,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "41"
             endingLineNumber = "41"
-            landmarkName = "decorateButton(button:color:)"
+            landmarkName = "decorateButton(_:color:)"
             landmarkType = "9">
          </BreakpointContent>
       </BreakpointProxy>

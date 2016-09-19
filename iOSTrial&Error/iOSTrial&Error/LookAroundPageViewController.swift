@@ -17,7 +17,7 @@ class LookAroundPageViewController: UIPageViewController , UIPageViewControllerD
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        arrPageTitle = ["Follow News that spark your interests.","Search for News.","News based on you reading habit.","Pass anything you want!"];
+        arrPageTitle = ["Follow News that spark your interests.","Search for News.","News based on your reading habit.","Pass anything you want!"];
         arrPagePhoto = ["topic.png","search.png","news.png","share.png"];
         arrPageMainTitle = ["Track","Look Out","Customized","Share"];
         

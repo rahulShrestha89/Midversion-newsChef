@@ -125,8 +125,8 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ZPI-PP-aDK">
                                 <frame key="frameInset" minX="91" minY="109" width="192" height="148"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="DGS-UN-uoB"/>
-                                    <constraint firstAttribute="width" constant="240" id="lAu-6H-4Ce"/>
+                                    <constraint firstAttribute="height" constant="150" id="DGS-UN-uoB"/>
+                                    <constraint firstAttribute="width" constant="150" id="lAu-6H-4Ce"/>
                                 </constraints>
                             </imageView>
                         </subviews>
