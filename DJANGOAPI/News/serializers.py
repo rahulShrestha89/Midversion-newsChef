@@ -1,13 +1,6 @@
 from rest_framework import serializers
 from News.models import New, LANGUAGE_CHOICES, STYLE_CHOICES
-
-# class NewSerializer(serializers.Serializer):
-	# pk = serializers.IntegerField(read_only=True)
-	# title = serializers.CharField(required=False,allow_blank=TRE,max_length=100)
-	# code = serializers.CharField(style = {'base_template' : 'textarea.html'})
-	# lineos = serializers.BooleanField(required=False)
-	# language = serializers.ChoiceField(choices=LANGUAGE_CHOICES,default='python')
-	# style = serializers.ChoiceField(choices=STYLE_CHOICES,default='friendly')
+from django.contrib.auth.models import User
 
 class NewSerializer(serializers.ModelSerializer):
 	class Meta:
@@ -31,3 +24,12 @@ class NewSerializer(serializers.ModelSerializer):
 		instance.style = validated_data.get('style',instance.style)
 		instance.save()
 		return instance
+
+
+class UserSerializer(serializers.ModelSerializer):
+	owner = serializers.ReadOnlyField(source='owner.username')
+	News = serializers.PrimaryKeyRelatedField(many=True, queryset=New.objects.all())
+	class Meta:
+		model = User
+		fields = ('id','username','News','owner')
+	
