@@ -31,11 +31,15 @@
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="newschef" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ofp-AG-JTg">
-                                <fontDescription key="fontDescription" name="SunriseInternationalDemo" family="Sunrise International Demo" pointSize="74"/>
+                                <fontDescription key="fontDescription" name="SunriseInternationalDemo" family="Sunrise International Demo" pointSize="96"/>
                                 <color key="textColor" red="0.97419011780104714" green="0.31834369689360276" blue="0.30673796224722227" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3kd-5f-s2S">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="255" id="ch3-YY-cAR"/>
+                                    <constraint firstAttribute="height" constant="53" id="xBm-oO-9kr"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                 <inset key="contentEdgeInsets" minX="10" minY="10" maxX="10" maxY="10"/>
                                 <state key="normal" title="Sign In with Phone Number">
@@ -47,6 +51,10 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xB-yf-1df">
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="255" id="OwQ-dq-V06"/>
+                                    <constraint firstAttribute="height" constant="53" id="USB-Nw-IAE"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="18"/>
                                 <inset key="contentEdgeInsets" minX="68" minY="10" maxX="68" maxY="10"/>
                                 <state key="normal" title="Look Around">
@@ -108,6 +116,7 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="     First Name" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="hDg-5F-Vgx" customClass="AkiraTextField" customModule="iOSTrial_Error" customModuleProvider="target">
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="Gki-7K-lPl"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="275" id="MTN-xi-kao"/>
                                     <constraint firstAttribute="width" constant="266" id="lsh-YK-XLG"/>
                                 </constraints>
                                 <nil key="textColor"/>
@@ -129,6 +138,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="VW4-PB-yoA"/>
                                     <constraint firstAttribute="width" constant="266" id="bGb-rd-cWg"/>
+                                    <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="275" id="xXl-ud-l8T"/>
                                 </constraints>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" name="Avenir-Book" family="Avenir" pointSize="17"/>
@@ -152,9 +162,18 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qA1-Cw-vGG">
-                                <state key="normal" title="Skip"/>
+                                <state key="normal" title="Cancel">
+                                    <color key="titleColor" red="0.076632092885318706" green="0.12432974446670246" blue="0.92081151829999996" alpha="1" colorSpace="calibratedRGB"/>
+                                </state>
                                 <connections>
                                     <segue destination="L1v-Cg-0yo" kind="unwind" unwindAction="unWindToLandingPageWithSegue:" id="dI6-Lk-kta"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sbo-HX-HPO">
+                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
+                                <state key="normal" title="Next"/>
+                                <connections>
+                                    <action selector="onNextButtonTapped:" destination="93v-dr-r8u" eventType="touchUpInside" id="gRA-av-My7"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -163,18 +182,24 @@
                             <constraint firstItem="Wbw-CV-Iax" firstAttribute="centerX" secondItem="iye-QL-vXU" secondAttribute="centerX" id="6yZ-yu-UCE"/>
                             <constraint firstItem="hDg-5F-Vgx" firstAttribute="centerX" secondItem="iye-QL-vXU" secondAttribute="centerX" id="FFr-B4-Q8o"/>
                             <constraint firstItem="qA1-Cw-vGG" firstAttribute="top" secondItem="Jyz-9Z-zh6" secondAttribute="bottom" id="GqJ-hn-rVF"/>
-                            <constraint firstItem="hDg-5F-Vgx" firstAttribute="top" secondItem="Jyz-9Z-zh6" secondAttribute="bottom" constant="90" id="J3E-z4-qs8"/>
                             <constraint firstAttribute="trailingMargin" secondItem="qA1-Cw-vGG" secondAttribute="trailing" constant="8" id="LA2-yC-Ozy"/>
+                            <constraint firstItem="Sbo-HX-HPO" firstAttribute="centerX" secondItem="iye-QL-vXU" secondAttribute="centerX" id="S6f-fb-SL3"/>
+                            <constraint firstItem="Sbo-HX-HPO" firstAttribute="top" secondItem="h3m-r7-UbL" secondAttribute="bottom" constant="179.5" id="cAx-Q8-T2v"/>
                             <constraint firstItem="Wbw-CV-Iax" firstAttribute="top" secondItem="Jyz-9Z-zh6" secondAttribute="bottom" constant="31" id="dCS-5Z-jWx"/>
                             <constraint firstItem="h3m-r7-UbL" firstAttribute="top" secondItem="hDg-5F-Vgx" secondAttribute="bottom" constant="23" id="eVY-iV-FQU"/>
+                            <constraint firstItem="hDg-5F-Vgx" firstAttribute="top" secondItem="Wbw-CV-Iax" secondAttribute="bottom" constant="65" id="eqY-Ms-QmK"/>
                             <constraint firstItem="h3m-r7-UbL" firstAttribute="centerX" secondItem="iye-QL-vXU" secondAttribute="centerX" id="hdi-TF-C29"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="firstName" destination="hDg-5F-Vgx" id="DVe-Eb-wBl"/>
+                        <outlet property="lastName" destination="h3m-r7-UbL" id="Uu6-84-Yhw"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TEe-WF-ah2" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="L1v-Cg-0yo" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="592.79999999999995" y="980.95952023988013"/>
+            <point key="canvasLocation" x="-967" y="1010"/>
         </scene>
         <!--Look Around Page View Controller-->
         <scene sceneID="aBD-Z7-psQ">
@@ -182,7 +207,7 @@
                 <pageViewController storyboardIdentifier="LookAroundPageViewController" autoresizesArchivedViewToFullSize="NO" transitionStyle="scroll" navigationOrientation="horizontal" spineLocation="none" id="0eQ-cw-l6s" customClass="LookAroundPageViewController" customModule="iOSTrial_Error" customModuleProvider="target" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HQa-xU-Fcq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="705.5" y="178.5"/>
+            <point key="canvasLocation" x="-174" y="-163"/>
         </scene>
         <!--Privacy Policy View Controller-->
         <scene sceneID="8aU-GE-CI4">
@@ -274,7 +299,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MI1-Ko-vT9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1413.5999999999999" y="177.66116941529236"/>
+            <point key="canvasLocation" x="-175" y="-838"/>
         </scene>
     </scenes>
     <resources>

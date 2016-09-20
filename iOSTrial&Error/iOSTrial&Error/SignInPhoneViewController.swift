@@ -7,29 +7,35 @@
 //
 
 import UIKit
+import UITextField_Shake
+
+
 
 class SignInPhoneViewController: UIViewController {
+    @IBOutlet weak var lastName: AkiraTextField!
 
+    @IBOutlet weak var firstName: AkiraTextField!
     override func viewDidLoad() {
         super.viewDidLoad()
 
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
+    @IBAction func onNextButtonTapped(_ sender: AnyObject) {
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if(firstName.text=="")
+        {
+            self.firstName.shake(20,                              withDelta: 7.0,
+                                     speed: 0.03
+            )
+        }
+        
+        if(lastName.text=="")
+        {
+            self.lastName.shake(20,                              withDelta: 7.0,
+                                 speed: 0.03
+            )
+        }
     }
-    */
 
 }

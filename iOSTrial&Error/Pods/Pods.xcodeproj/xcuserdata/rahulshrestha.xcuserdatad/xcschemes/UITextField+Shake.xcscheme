@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "5DDB6B8424EA75880BC92C62F6A659EB"
-               BuildableName = "Pods_iOSTrial_Error.framework"
-               BlueprintName = "Pods-iOSTrial&amp;Error"
+               BlueprintIdentifier = "62CC56B68A1979FE50918CFE280E11CB"
+               BuildableName = "UITextField_Shake.framework"
+               BlueprintName = "UITextField+Shake"
                ReferencedContainer = "container:Pods.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -45,9 +45,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "5DDB6B8424EA75880BC92C62F6A659EB"
-            BuildableName = "Pods_iOSTrial_Error.framework"
-            BlueprintName = "Pods-iOSTrial&amp;Error"
+            BlueprintIdentifier = "62CC56B68A1979FE50918CFE280E11CB"
+            BuildableName = "UITextField_Shake.framework"
+            BlueprintName = "UITextField+Shake"
             ReferencedContainer = "container:Pods.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

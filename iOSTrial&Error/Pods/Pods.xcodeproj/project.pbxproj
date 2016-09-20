@@ -7,39 +7,85 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3E054DCA1652EFA21FB29E748C2AD3B1 /* Pods-iOSTrial&Error-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 570BA8B64DC7F881C009AFE3C1E661E8 /* Pods-iOSTrial&Error-dummy.m */; };
-		7C3F10E126BF88B68A59FA79349BBEA5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		C52E3D5BFFFCB92B5249D13021CF4FD6 /* Pods-iOSTrial&Error-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 942457E3EA29E9BB7014A9FEF026A718 /* Pods-iOSTrial&Error-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		16EF8813509811F3E6B2008F62DCD797 /* Pods-iOSTrial&Error-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 570BA8B64DC7F881C009AFE3C1E661E8 /* Pods-iOSTrial&Error-dummy.m */; };
+		3B1AEE4AA934378F1FC6B0C10BF0E0D6 /* UITextField+Shake.h in Headers */ = {isa = PBXBuildFile; fileRef = 36F6C12FF1F62B73AE904D6D27C46D40 /* UITextField+Shake.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B45ABE0E3C44227013D845B0A149711 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		76276294152CC4E08C312F53FDA4622F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
+		9B72C9B9274EBCA3820B573480274C66 /* UITextField+Shake-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2EEC5829F3B13C4DEC14143F997C09 /* UITextField+Shake-dummy.m */; };
+		B9FEF14BF528FC79ED29C768ACA8DBE4 /* UITextField+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D2CBD9E51CFAE1DF30040F5B8AB61B /* UITextField+Shake.m */; };
+		E2D53ABB934B026653CB9983CF957FF3 /* UITextField+Shake-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B767214643AFA0295A0EAACD7B42484D /* UITextField+Shake-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F9D47E3CE8E6CF07B927738B0C244239 /* Pods-iOSTrial&Error-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 942457E3EA29E9BB7014A9FEF026A718 /* Pods-iOSTrial&Error-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		2CDB711C74B005E19C68D40B10E1C850 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 62CC56B68A1979FE50918CFE280E11CB;
+			remoteInfo = "UITextField+Shake";
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		06AE5990C6A7DC142415946613B2AE4C /* UITextField+Shake.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "UITextField+Shake.modulemap"; sourceTree = "<group>"; };
+		0CA53739476E4131A670EB102D962897 /* UITextField+Shake-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITextField+Shake-prefix.pch"; sourceTree = "<group>"; };
+		1E75EC321AA4AB16ECE91D930F00505B /* UITextField+Shake.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UITextField+Shake.xcconfig"; sourceTree = "<group>"; };
+		2A2EEC5829F3B13C4DEC14143F997C09 /* UITextField+Shake-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Shake-dummy.m"; sourceTree = "<group>"; };
 		33C4C237DD7399D28226AA6E7980A612 /* Pods-iOSTrial&Error-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iOSTrial&Error-acknowledgements.markdown"; sourceTree = "<group>"; };
+		36F6C12FF1F62B73AE904D6D27C46D40 /* UITextField+Shake.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+Shake.h"; path = "Source/UITextField+Shake.h"; sourceTree = "<group>"; };
+		39D2CBD9E51CFAE1DF30040F5B8AB61B /* UITextField+Shake.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+Shake.m"; path = "Source/UITextField+Shake.m"; sourceTree = "<group>"; };
 		570BA8B64DC7F881C009AFE3C1E661E8 /* Pods-iOSTrial&Error-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iOSTrial&Error-dummy.m"; sourceTree = "<group>"; };
 		8F324AEDF6A028F30B10777C467E248E /* Pods-iOSTrial&Error-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOSTrial&Error-frameworks.sh"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		942457E3EA29E9BB7014A9FEF026A718 /* Pods-iOSTrial&Error-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iOSTrial&Error-umbrella.h"; sourceTree = "<group>"; };
 		9739E428B57762312A337C01CE27AAE8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		990725177BAE1009DB041BADBE64EF06 /* Pods-iOSTrial&Error-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iOSTrial&Error-acknowledgements.plist"; sourceTree = "<group>"; };
-		A0F4DDD042230DAA6DF78489B6E5D822 /* Pods_iOSTrial_Error.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSTrial_Error.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A8180DD8FA98AB5DE4B49FC9799F40F9 /* Pods-iOSTrial&Error.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOSTrial&Error.debug.xcconfig"; sourceTree = "<group>"; };
 		A958124DCDA4DDAB7D977B92FB34356F /* Pods-iOSTrial&Error.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-iOSTrial&Error.modulemap"; sourceTree = "<group>"; };
+		B767214643AFA0295A0EAACD7B42484D /* UITextField+Shake-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITextField+Shake-umbrella.h"; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		D92053CFCEFD408A5119A68E09DE4B65 /* Pods-iOSTrial&Error.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOSTrial&Error.release.xcconfig"; sourceTree = "<group>"; };
+		E1F943374BC1B647A91DD44F3510D08A /* UITextField_Shake.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UITextField_Shake.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F2EDF9D30BF082E4649D9B7862709759 /* Pods_iOSTrial_Error.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSTrial_Error.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		F7AAFD322321D16EF579944C8FEFB01C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA262F165FD901A4F8277D72705DA231 /* Pods-iOSTrial&Error-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOSTrial&Error-resources.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		37BC20627B1B14E6735F031E78B04D43 /* Frameworks */ = {
+		56432ECC91FFA21F66186C1249741636 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7C3F10E126BF88B68A59FA79349BBEA5 /* Foundation.framework in Frameworks */,
+				3B45ABE0E3C44227013D845B0A149711 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FB1FE0A7EFEE32273A10FE9804B8B2DE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				76276294152CC4E08C312F53FDA4622F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		09705294BAF2910CC701CBADE11DC3EF /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				F7AAFD322321D16EF579944C8FEFB01C /* Info.plist */,
+				06AE5990C6A7DC142415946613B2AE4C /* UITextField+Shake.modulemap */,
+				1E75EC321AA4AB16ECE91D930F00505B /* UITextField+Shake.xcconfig */,
+				2A2EEC5829F3B13C4DEC14143F997C09 /* UITextField+Shake-dummy.m */,
+				0CA53739476E4131A670EB102D962897 /* UITextField+Shake-prefix.pch */,
+				B767214643AFA0295A0EAACD7B42484D /* UITextField+Shake-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UITextField+Shake";
+			sourceTree = "<group>";
+		};
 		2F20333BB06A3608B20E08A76B251169 /* Targets Support Files */ = {
 			isa = PBXGroup;
 			children = (
@@ -61,9 +107,18 @@
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				9DB7859EC270888DC2B7B7CE75E0076D /* Products */,
+				8105B9C00D364E5173D5D1D94FA69791 /* Pods */,
+				9042F368DDAE27A9072B7EB2E8235E7F /* Products */,
 				2F20333BB06A3608B20E08A76B251169 /* Targets Support Files */,
 			);
+			sourceTree = "<group>";
+		};
+		8105B9C00D364E5173D5D1D94FA69791 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BFD4894937807BD04EF01A862A6EA591 /* UITextField+Shake */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		8991CCEA56DA6CBF4DE8D1529E35D922 /* Pods-iOSTrial&Error */ = {
@@ -84,10 +139,11 @@
 			path = "Target Support Files/Pods-iOSTrial&Error";
 			sourceTree = "<group>";
 		};
-		9DB7859EC270888DC2B7B7CE75E0076D /* Products */ = {
+		9042F368DDAE27A9072B7EB2E8235E7F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				A0F4DDD042230DAA6DF78489B6E5D822 /* Pods_iOSTrial_Error.framework */,
+				F2EDF9D30BF082E4649D9B7862709759 /* Pods_iOSTrial_Error.framework */,
+				E1F943374BC1B647A91DD44F3510D08A /* UITextField_Shake.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -100,35 +156,72 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		BFD4894937807BD04EF01A862A6EA591 /* UITextField+Shake */ = {
+			isa = PBXGroup;
+			children = (
+				36F6C12FF1F62B73AE904D6D27C46D40 /* UITextField+Shake.h */,
+				39D2CBD9E51CFAE1DF30040F5B8AB61B /* UITextField+Shake.m */,
+				09705294BAF2910CC701CBADE11DC3EF /* Support Files */,
+			);
+			path = "UITextField+Shake";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		F8B0F08269FDD4A78A2DE8C884058079 /* Headers */ = {
+		2AD71B24EEF5F1D6AB07B13F8AFDD5B5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C52E3D5BFFFCB92B5249D13021CF4FD6 /* Pods-iOSTrial&Error-umbrella.h in Headers */,
+				E2D53ABB934B026653CB9983CF957FF3 /* UITextField+Shake-umbrella.h in Headers */,
+				3B1AEE4AA934378F1FC6B0C10BF0E0D6 /* UITextField+Shake.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B51EE1372F86C670FFA51166DB84AE96 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F9D47E3CE8E6CF07B927738B0C244239 /* Pods-iOSTrial&Error-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		EC27EF8A85A8A61387E75B7122E09173 /* Pods-iOSTrial&Error */ = {
+		5DDB6B8424EA75880BC92C62F6A659EB /* Pods-iOSTrial&Error */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5E419AD4001D727A8D0AF410E4705E17 /* Build configuration list for PBXNativeTarget "Pods-iOSTrial&Error" */;
+			buildConfigurationList = D4F22CA124B7B8123A0CDA9EC1A135DC /* Build configuration list for PBXNativeTarget "Pods-iOSTrial&Error" */;
 			buildPhases = (
-				E620BE58D78B9A7EDA20A12F90EF9CF1 /* Sources */,
-				37BC20627B1B14E6735F031E78B04D43 /* Frameworks */,
-				F8B0F08269FDD4A78A2DE8C884058079 /* Headers */,
+				CC83481DECA35D6E587414114981C8B0 /* Sources */,
+				FB1FE0A7EFEE32273A10FE9804B8B2DE /* Frameworks */,
+				B51EE1372F86C670FFA51166DB84AE96 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				EA3283DA3DDEA644F41D9F39C8B4E1DC /* PBXTargetDependency */,
+			);
+			name = "Pods-iOSTrial&Error";
+			productName = "Pods-iOSTrial&Error";
+			productReference = F2EDF9D30BF082E4649D9B7862709759 /* Pods_iOSTrial_Error.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		62CC56B68A1979FE50918CFE280E11CB /* UITextField+Shake */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B9F66BA29D2C6E13955DF550517C0562 /* Build configuration list for PBXNativeTarget "UITextField+Shake" */;
+			buildPhases = (
+				A907F4C118BB6CB9861D9AC75CD14CC6 /* Sources */,
+				56432ECC91FFA21F66186C1249741636 /* Frameworks */,
+				2AD71B24EEF5F1D6AB07B13F8AFDD5B5 /* Headers */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			name = "Pods-iOSTrial&Error";
-			productName = "Pods-iOSTrial&Error";
-			productReference = A0F4DDD042230DAA6DF78489B6E5D822 /* Pods_iOSTrial_Error.framework */;
+			name = "UITextField+Shake";
+			productName = "UITextField+Shake";
+			productReference = E1F943374BC1B647A91DD44F3510D08A /* UITextField_Shake.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -148,25 +241,44 @@
 				en,
 			);
 			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
-			productRefGroup = 9DB7859EC270888DC2B7B7CE75E0076D /* Products */;
+			productRefGroup = 9042F368DDAE27A9072B7EB2E8235E7F /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				EC27EF8A85A8A61387E75B7122E09173 /* Pods-iOSTrial&Error */,
+				5DDB6B8424EA75880BC92C62F6A659EB /* Pods-iOSTrial&Error */,
+				62CC56B68A1979FE50918CFE280E11CB /* UITextField+Shake */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXSourcesBuildPhase section */
-		E620BE58D78B9A7EDA20A12F90EF9CF1 /* Sources */ = {
+		A907F4C118BB6CB9861D9AC75CD14CC6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3E054DCA1652EFA21FB29E748C2AD3B1 /* Pods-iOSTrial&Error-dummy.m in Sources */,
+				9B72C9B9274EBCA3820B573480274C66 /* UITextField+Shake-dummy.m in Sources */,
+				B9FEF14BF528FC79ED29C768ACA8DBE4 /* UITextField+Shake.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CC83481DECA35D6E587414114981C8B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16EF8813509811F3E6B2008F62DCD797 /* Pods-iOSTrial&Error-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		EA3283DA3DDEA644F41D9F39C8B4E1DC /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = "UITextField+Shake";
+			target = 62CC56B68A1979FE50918CFE280E11CB /* UITextField+Shake */;
+			targetProxy = 2CDB711C74B005E19C68D40B10E1C850 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		12914D756594D15C6F2CA12FE5F89F1B /* Debug */ = {
@@ -213,7 +325,42 @@
 			};
 			name = Debug;
 		};
-		931B2700D127D7D87CDF7B8A93DA2ABD /* Release */ = {
+		31FEDBAE67CEFD88F87C153E5F1C209D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A8180DD8FA98AB5DE4B49FC9799F40F9 /* Pods-iOSTrial&Error.debug.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-iOSTrial&Error/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-iOSTrial&Error/Pods-iOSTrial&Error.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_iOSTrial_Error;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		7F3F0EFF81DD49DA57DA025DE5C2797A /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = D92053CFCEFD408A5119A68E09DE4B65 /* Pods-iOSTrial&Error.release.xcconfig */;
 			buildSettings = {
@@ -242,6 +389,38 @@
 				PRODUCT_NAME = Pods_iOSTrial_Error;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		B68AD4BE6CEE404187BE12C2B0E2DE75 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1E75EC321AA4AB16ECE91D930F00505B /* UITextField+Shake.xcconfig */;
+			buildSettings = {
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/UITextField+Shake/UITextField+Shake-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UITextField+Shake/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/UITextField+Shake/UITextField+Shake.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = UITextField_Shake;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -288,9 +467,9 @@
 			};
 			name = Release;
 		};
-		EDA1D71E6F89F1BB9C6A8518F6811CF0 /* Debug */ = {
+		FF29D81F49F7828FADF4B9A373BD5DF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = A8180DD8FA98AB5DE4B49FC9799F40F9 /* Pods-iOSTrial&Error.debug.xcconfig */;
+			baseConfigurationReference = 1E75EC321AA4AB16ECE91D930F00505B /* UITextField+Shake.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -303,20 +482,17 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_NO_COMMON_BLOCKS = YES;
-				INFOPLIST_FILE = "Target Support Files/Pods-iOSTrial&Error/Info.plist";
+				GCC_PREFIX_HEADER = "Target Support Files/UITextField+Shake/UITextField+Shake-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/UITextField+Shake/Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-iOSTrial&Error/Pods-iOSTrial&Error.modulemap";
+				MODULEMAP_FILE = "Target Support Files/UITextField+Shake/UITextField+Shake.modulemap";
 				MTL_ENABLE_DEBUG_INFO = YES;
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = Pods_iOSTrial_Error;
+				PRODUCT_NAME = UITextField_Shake;
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
@@ -335,11 +511,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5E419AD4001D727A8D0AF410E4705E17 /* Build configuration list for PBXNativeTarget "Pods-iOSTrial&Error" */ = {
+		B9F66BA29D2C6E13955DF550517C0562 /* Build configuration list for PBXNativeTarget "UITextField+Shake" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				EDA1D71E6F89F1BB9C6A8518F6811CF0 /* Debug */,
-				931B2700D127D7D87CDF7B8A93DA2ABD /* Release */,
+				FF29D81F49F7828FADF4B9A373BD5DF2 /* Debug */,
+				B68AD4BE6CEE404187BE12C2B0E2DE75 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D4F22CA124B7B8123A0CDA9EC1A135DC /* Build configuration list for PBXNativeTarget "Pods-iOSTrial&Error" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				31FEDBAE67CEFD88F87C153E5F1C209D /* Debug */,
+				7F3F0EFF81DD49DA57DA025DE5C2797A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
