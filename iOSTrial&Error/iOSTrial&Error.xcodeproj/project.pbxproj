@@ -13,6 +13,17 @@
 		533603F01D80EE3300EAE5A6 /* iOSTrial_Error.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 533603EE1D80EE3300EAE5A6 /* iOSTrial_Error.xcdatamodeld */; };
 		533603F21D80EE3300EAE5A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 533603F11D80EE3300EAE5A6 /* Assets.xcassets */; };
 		533603F51D80EE3300EAE5A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 533603F31D80EE3300EAE5A6 /* LaunchScreen.storyboard */; };
+		534EEC171D90E632008D7E6E /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534EEC0B1D90E632008D7E6E /* AkiraTextField.swift */; };
+		534EEC181D90E632008D7E6E /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534EEC0C1D90E632008D7E6E /* HoshiTextField.swift */; };
+		534EEC191D90E632008D7E6E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 534EEC0D1D90E632008D7E6E /* Info.plist */; };
+		534EEC1A1D90E632008D7E6E /* IsaoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534EEC0E1D90E632008D7E6E /* IsaoTextField.swift */; };
+		534EEC1B1D90E632008D7E6E /* JiroTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534EEC0F1D90E632008D7E6E /* JiroTextField.swift */; };
+		534EEC1C1D90E632008D7E6E /* KaedeTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534EEC101D90E632008D7E6E /* KaedeTextField.swift */; };
+		534EEC1D1D90E632008D7E6E /* MadokaTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534EEC111D90E632008D7E6E /* MadokaTextField.swift */; };
+		534EEC1E1D90E632008D7E6E /* MinoruTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534EEC121D90E632008D7E6E /* MinoruTextField.swift */; };
+		534EEC1F1D90E632008D7E6E /* TextFieldsEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534EEC141D90E632008D7E6E /* TextFieldsEffects.swift */; };
+		534EEC201D90E632008D7E6E /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534EEC151D90E632008D7E6E /* YokoTextField.swift */; };
+		534EEC211D90E632008D7E6E /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534EEC161D90E632008D7E6E /* YoshikoTextField.swift */; };
 		536F4A2C1D85E857006093A0 /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F4A2B1D85E857006093A0 /* LandingPageViewController.swift */; };
 		536F4A2E1D85FE1D006093A0 /* Luna.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 536F4A2D1D85FD8D006093A0 /* Luna.ttf */; };
 		536F4A301D8602D6006093A0 /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F4A2F1D8602D6006093A0 /* ColorConstants.swift */; };
@@ -23,6 +34,7 @@
 		53D99B4C1D90A08A00CC1FA5 /* Sunrise International Demo.otf in Resources */ = {isa = PBXBuildFile; fileRef = 53D99B4B1D90A08A00CC1FA5 /* Sunrise International Demo.otf */; };
 		53D99B4E1D90A09E00CC1FA5 /* TheLastCall.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 53D99B4D1D90A09E00CC1FA5 /* TheLastCall.ttf */; };
 		53D99B501D90A2EC00CC1FA5 /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D99B4F1D90A2EC00CC1FA5 /* PrivacyPolicyViewController.swift */; };
+		53D99B521D90BCBA00CC1FA5 /* SignInPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D99B511D90BCBA00CC1FA5 /* SignInPhoneViewController.swift */; };
 		53EE24B41D812821000BDDFB /* DigitsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53EE24B21D812821000BDDFB /* DigitsKit.framework */; };
 		53EE24B51D812821000BDDFB /* DigitsKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 53EE24B31D812821000BDDFB /* DigitsKitResources.bundle */; };
 		53FD70201D85CC0E00559FF3 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53FD701F1D85CC0E00559FF3 /* TwitterCore.framework */; };
@@ -40,6 +52,18 @@
 		533603F11D80EE3300EAE5A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		533603F41D80EE3300EAE5A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		533603F61D80EE3300EAE5A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		534EEC0B1D90E632008D7E6E /* AkiraTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AkiraTextField.swift; sourceTree = "<group>"; };
+		534EEC0C1D90E632008D7E6E /* HoshiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoshiTextField.swift; sourceTree = "<group>"; };
+		534EEC0D1D90E632008D7E6E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		534EEC0E1D90E632008D7E6E /* IsaoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IsaoTextField.swift; sourceTree = "<group>"; };
+		534EEC0F1D90E632008D7E6E /* JiroTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JiroTextField.swift; sourceTree = "<group>"; };
+		534EEC101D90E632008D7E6E /* KaedeTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KaedeTextField.swift; sourceTree = "<group>"; };
+		534EEC111D90E632008D7E6E /* MadokaTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MadokaTextField.swift; sourceTree = "<group>"; };
+		534EEC121D90E632008D7E6E /* MinoruTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MinoruTextField.swift; sourceTree = "<group>"; };
+		534EEC131D90E632008D7E6E /* TextFieldEffects.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextFieldEffects.h; sourceTree = "<group>"; };
+		534EEC141D90E632008D7E6E /* TextFieldsEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldsEffects.swift; sourceTree = "<group>"; };
+		534EEC151D90E632008D7E6E /* YokoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YokoTextField.swift; sourceTree = "<group>"; };
+		534EEC161D90E632008D7E6E /* YoshikoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoshikoTextField.swift; sourceTree = "<group>"; };
 		536F4A2B1D85E857006093A0 /* LandingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
 		536F4A2D1D85FD8D006093A0 /* Luna.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Luna.ttf; sourceTree = "<group>"; };
 		536F4A2F1D8602D6006093A0 /* ColorConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
@@ -51,6 +75,7 @@
 		53D99B4B1D90A08A00CC1FA5 /* Sunrise International Demo.otf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Sunrise International Demo.otf"; sourceTree = "<group>"; };
 		53D99B4D1D90A09E00CC1FA5 /* TheLastCall.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = TheLastCall.ttf; sourceTree = "<group>"; };
 		53D99B4F1D90A2EC00CC1FA5 /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
+		53D99B511D90BCBA00CC1FA5 /* SignInPhoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInPhoneViewController.swift; sourceTree = "<group>"; };
 		53EE24B21D812821000BDDFB /* DigitsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DigitsKit.framework; sourceTree = "<group>"; };
 		53EE24B31D812821000BDDFB /* DigitsKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = DigitsKitResources.bundle; path = DigitsKit.framework/Versions/A/Resources/DigitsKitResources.bundle; sourceTree = "<group>"; };
 		53FD701F1D85CC0E00559FF3 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
@@ -76,6 +101,7 @@
 		533603DB1D80EE3300EAE5A6 = {
 			isa = PBXGroup;
 			children = (
+				534EEC0A1D90E5BF008D7E6E /* TextFieldEffects */,
 				53FD701F1D85CC0E00559FF3 /* TwitterCore.framework */,
 				53D3599B1D8126E00094C935 /* TwitterCore.framework */,
 				5395FAF91D811EAE00179E40 /* Fabric.framework */,
@@ -113,6 +139,25 @@
 			path = "iOSTrial&Error";
 			sourceTree = "<group>";
 		};
+		534EEC0A1D90E5BF008D7E6E /* TextFieldEffects */ = {
+			isa = PBXGroup;
+			children = (
+				534EEC0B1D90E632008D7E6E /* AkiraTextField.swift */,
+				534EEC0C1D90E632008D7E6E /* HoshiTextField.swift */,
+				534EEC0D1D90E632008D7E6E /* Info.plist */,
+				534EEC0E1D90E632008D7E6E /* IsaoTextField.swift */,
+				534EEC0F1D90E632008D7E6E /* JiroTextField.swift */,
+				534EEC101D90E632008D7E6E /* KaedeTextField.swift */,
+				534EEC111D90E632008D7E6E /* MadokaTextField.swift */,
+				534EEC121D90E632008D7E6E /* MinoruTextField.swift */,
+				534EEC131D90E632008D7E6E /* TextFieldEffects.h */,
+				534EEC141D90E632008D7E6E /* TextFieldsEffects.swift */,
+				534EEC151D90E632008D7E6E /* YokoTextField.swift */,
+				534EEC161D90E632008D7E6E /* YoshikoTextField.swift */,
+			);
+			name = TextFieldEffects;
+			sourceTree = "<group>";
+		};
 		536E9D2C1D87A8370060D66F /* Assets */ = {
 			isa = PBXGroup;
 			children = (
@@ -138,6 +183,7 @@
 				53AF09EB1D87796500FF07D6 /* LookAroundPageViewController.swift */,
 				5313C4631D88028300D434DB /* LookUpChildViewController.swift */,
 				53D99B4F1D90A2EC00CC1FA5 /* PrivacyPolicyViewController.swift */,
+				53D99B511D90BCBA00CC1FA5 /* SignInPhoneViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -234,6 +280,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				534EEC191D90E632008D7E6E /* Info.plist in Resources */,
 				53D99B4E1D90A09E00CC1FA5 /* TheLastCall.ttf in Resources */,
 				53EE24B51D812821000BDDFB /* DigitsKitResources.bundle in Resources */,
 				536F4A2E1D85FE1D006093A0 /* Luna.ttf in Resources */,
@@ -259,7 +306,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		5395FAF71D811E6B00179E40 /* ShellScript */ = {
@@ -325,14 +372,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				534EEC1D1D90E632008D7E6E /* MadokaTextField.swift in Sources */,
+				534EEC181D90E632008D7E6E /* HoshiTextField.swift in Sources */,
+				534EEC211D90E632008D7E6E /* YoshikoTextField.swift in Sources */,
 				533603F01D80EE3300EAE5A6 /* iOSTrial_Error.xcdatamodeld in Sources */,
+				534EEC1E1D90E632008D7E6E /* MinoruTextField.swift in Sources */,
+				534EEC1C1D90E632008D7E6E /* KaedeTextField.swift in Sources */,
+				534EEC201D90E632008D7E6E /* YokoTextField.swift in Sources */,
 				53AF09F01D87A59F00FF07D6 /* Images.swift in Sources */,
+				534EEC1A1D90E632008D7E6E /* IsaoTextField.swift in Sources */,
 				53AF09EC1D87796500FF07D6 /* LookAroundPageViewController.swift in Sources */,
 				53D99B501D90A2EC00CC1FA5 /* PrivacyPolicyViewController.swift in Sources */,
+				534EEC171D90E632008D7E6E /* AkiraTextField.swift in Sources */,
+				534EEC1F1D90E632008D7E6E /* TextFieldsEffects.swift in Sources */,
 				5313C4641D88028300D434DB /* LookUpChildViewController.swift in Sources */,
+				53D99B521D90BCBA00CC1FA5 /* SignInPhoneViewController.swift in Sources */,
 				536F4A2C1D85E857006093A0 /* LandingPageViewController.swift in Sources */,
 				533603E81D80EE3300EAE5A6 /* AppDelegate.swift in Sources */,
 				536F4A301D8602D6006093A0 /* ColorConstants.swift in Sources */,
+				534EEC1B1D90E632008D7E6E /* JiroTextField.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -402,6 +460,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -443,6 +502,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 			};
