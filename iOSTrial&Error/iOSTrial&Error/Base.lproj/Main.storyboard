@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="93v-dr-r8u">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -42,6 +42,7 @@
                                     <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <connections>
+                                    <action selector="onSignInButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qOc-AG-W1g"/>
                                     <segue destination="93v-dr-r8u" kind="presentation" identifier="showSignInView" id="9hh-Ac-i3H"/>
                                 </connections>
                             </button>
@@ -150,12 +151,20 @@
                                 <color key="textColor" red="0.92081151829999996" green="0.1693270395396298" blue="0.083736643737046035" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qA1-Cw-vGG">
+                                <state key="normal" title="Skip"/>
+                                <connections>
+                                    <segue destination="L1v-Cg-0yo" kind="unwind" unwindAction="unWindToLandingPageWithSegue:" id="dI6-Lk-kta"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Wbw-CV-Iax" firstAttribute="centerX" secondItem="iye-QL-vXU" secondAttribute="centerX" id="6yZ-yu-UCE"/>
                             <constraint firstItem="hDg-5F-Vgx" firstAttribute="centerX" secondItem="iye-QL-vXU" secondAttribute="centerX" id="FFr-B4-Q8o"/>
-                            <constraint firstItem="hDg-5F-Vgx" firstAttribute="top" secondItem="Jyz-9Z-zh6" secondAttribute="bottom" constant="70" id="J3E-z4-qs8"/>
+                            <constraint firstItem="qA1-Cw-vGG" firstAttribute="top" secondItem="Jyz-9Z-zh6" secondAttribute="bottom" id="GqJ-hn-rVF"/>
+                            <constraint firstItem="hDg-5F-Vgx" firstAttribute="top" secondItem="Jyz-9Z-zh6" secondAttribute="bottom" constant="90" id="J3E-z4-qs8"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="qA1-Cw-vGG" secondAttribute="trailing" constant="8" id="LA2-yC-Ozy"/>
                             <constraint firstItem="Wbw-CV-Iax" firstAttribute="top" secondItem="Jyz-9Z-zh6" secondAttribute="bottom" constant="31" id="dCS-5Z-jWx"/>
                             <constraint firstItem="h3m-r7-UbL" firstAttribute="top" secondItem="hDg-5F-Vgx" secondAttribute="bottom" constant="23" id="eVY-iV-FQU"/>
                             <constraint firstItem="h3m-r7-UbL" firstAttribute="centerX" secondItem="iye-QL-vXU" secondAttribute="centerX" id="hdi-TF-C29"/>
@@ -163,6 +172,7 @@
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TEe-WF-ah2" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="L1v-Cg-0yo" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="592.79999999999995" y="980.95952023988013"/>
         </scene>

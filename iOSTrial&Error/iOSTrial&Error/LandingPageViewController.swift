@@ -29,10 +29,14 @@ class LandingPageViewController: UIViewController {
     @IBAction func onPrivacyPolicyButtonPressed(_ sender: AnyObject) {
         self.performSegue(withIdentifier: "showPrivacyPolicy", sender: self)
     }
+    
     @IBAction func onLookAroundButtonPressed(_ sender: AnyObject) {
         self.performSegue(withIdentifier: "showLookAround", sender: self)
     }
 
+    @IBAction func onSignInButtonTapped(_ sender: AnyObject) {
+        self.performSegue(withIdentifier: "showSignInView", sender: self)
+    }
     
     // this refers to the unwind segue from other controllers
     // use this to unwind back
