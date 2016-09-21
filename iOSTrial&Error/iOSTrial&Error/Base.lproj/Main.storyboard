@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G1004" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -117,6 +117,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="Gki-7K-lPl"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="275" id="MTN-xi-kao"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="295" id="ND3-M6-R7S"/>
                                     <constraint firstAttribute="width" constant="266" id="lsh-YK-XLG"/>
                                 </constraints>
                                 <nil key="textColor"/>
@@ -138,6 +139,7 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="VW4-PB-yoA"/>
                                     <constraint firstAttribute="width" constant="266" id="bGb-rd-cWg"/>
+                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="295" id="uCt-T3-kB4"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="275" id="xXl-ud-l8T"/>
                                 </constraints>
                                 <nil key="textColor"/>
@@ -199,7 +201,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TEe-WF-ah2" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="L1v-Cg-0yo" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-967" y="1010"/>
+            <point key="canvasLocation" x="-967.20000000000005" y="1009.7451274362819"/>
         </scene>
         <!--Look Around Page View Controller-->
         <scene sceneID="aBD-Z7-psQ">

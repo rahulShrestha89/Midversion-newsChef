@@ -47,4 +47,8 @@ extension UIColor {
     class func newsChefWhiteColor() -> UIColor {
         return UIColor(red: 236/255, green: 239/255, blue: 241/255, alpha: 1.0)
     }
+    
+    class func newsChefMainColor() -> UIColor {
+        return UIColor(red: 230/255, green: 81/255, blue: 0/255, alpha: 1.0)
+    }
 }
