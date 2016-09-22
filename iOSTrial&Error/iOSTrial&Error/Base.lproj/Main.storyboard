@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="rNi-Bc-1LM">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -12,10 +12,10 @@
         </array>
     </customFonts>
     <scenes>
-        <!--Landing Page View Controller-->
+        <!--SignInPhoneViewController-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="LandingPageViewController" customModule="iOSTrial_Error" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="LandingPageViewController" title="SignInPhoneViewController" id="BYZ-38-t0r" customClass="LandingPageViewController" customModule="iOSTrial_Error" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -47,7 +47,7 @@
                                 </state>
                                 <connections>
                                     <action selector="onSignInButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qOc-AG-W1g"/>
-                                    <segue destination="93v-dr-r8u" kind="presentation" identifier="showSignInView" id="9hh-Ac-i3H"/>
+                                    <segue destination="93v-dr-r8u" kind="presentation" identifier="showSignInView" id="VT3-zR-5Xh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xB-yf-1df">
@@ -99,7 +99,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-126" y="600"/>
+            <point key="canvasLocation" x="620" y="358"/>
         </scene>
         <!--Sign In Phone View Controller-->
         <scene sceneID="DH5-jp-0d3">
@@ -117,7 +117,6 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="Gki-7K-lPl"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="275" id="MTN-xi-kao"/>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="295" id="ND3-M6-R7S"/>
                                     <constraint firstAttribute="width" constant="266" id="lsh-YK-XLG"/>
                                 </constraints>
                                 <nil key="textColor"/>
@@ -139,7 +138,6 @@
                                 <constraints>
                                     <constraint firstAttribute="height" constant="55" id="VW4-PB-yoA"/>
                                     <constraint firstAttribute="width" constant="266" id="bGb-rd-cWg"/>
-                                    <constraint firstAttribute="width" relation="lessThanOrEqual" constant="295" id="uCt-T3-kB4"/>
                                     <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="275" id="xXl-ud-l8T"/>
                                 </constraints>
                                 <nil key="textColor"/>
@@ -171,9 +169,9 @@
                                     <segue destination="L1v-Cg-0yo" kind="unwind" unwindAction="unWindToLandingPageWithSegue:" id="dI6-Lk-kta"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sbo-HX-HPO">
-                                <fontDescription key="fontDescription" type="system" pointSize="21"/>
-                                <state key="normal" title="Next"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Sbo-HX-HPO">
+                                <frame key="frameInset" minX="142" minY="464" width="91" height="64"/>
+                                <state key="normal" image="next"/>
                                 <connections>
                                     <action selector="onNextButtonTapped:" destination="93v-dr-r8u" eventType="touchUpInside" id="gRA-av-My7"/>
                                 </connections>
@@ -196,12 +194,69 @@
                     <connections>
                         <outlet property="firstName" destination="hDg-5F-Vgx" id="DVe-Eb-wBl"/>
                         <outlet property="lastName" destination="h3m-r7-UbL" id="Uu6-84-Yhw"/>
+                        <segue destination="rNi-Bc-1LM" kind="presentation" identifier="showTabbedView" id="E6W-qF-jdn"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TEe-WF-ah2" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="L1v-Cg-0yo" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-967.20000000000005" y="1009.7451274362819"/>
+            <point key="canvasLocation" x="-1" y="1263"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="zF6-sB-L8I">
+            <objects>
+                <viewController id="vfz-oY-rLK" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="HCw-Z5-ubt"/>
+                        <viewControllerLayoutGuide type="bottom" id="SPW-fQ-ss5"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="adv-HU-SnI">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="YZT-dB-iEk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="UJ6-kf-0lk" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2188" y="1026"/>
+        </scene>
+        <!--Item 1-->
+        <scene sceneID="tIu-FN-fK6">
+            <objects>
+                <viewController id="n5d-ts-oIT" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ty3-BH-tMQ"/>
+                        <viewControllerLayoutGuide type="bottom" id="Kwe-CH-4kz"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="W6q-ME-aKi">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 1" id="Ma3-Yf-Arf"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dck-Av-0iy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2188" y="342"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="XxC-b7-QxV">
+            <objects>
+                <tabBarController id="rNi-Bc-1LM" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="tdK-Ql-Scm">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="n5d-ts-oIT" kind="relationship" relationship="viewControllers" id="w1g-X1-00J"/>
+                        <segue destination="vfz-oY-rLK" kind="relationship" relationship="viewControllers" id="cRs-s6-LTk"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sL7-qF-cUL" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1441" y="548"/>
         </scene>
         <!--Look Around Page View Controller-->
         <scene sceneID="aBD-Z7-psQ">
@@ -306,5 +361,6 @@
     </scenes>
     <resources>
         <image name="LandingPageBackground" width="1280" height="960"/>
+        <image name="next" width="64" height="64"/>
     </resources>
 </document>

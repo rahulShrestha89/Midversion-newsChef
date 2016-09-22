@@ -24,6 +24,10 @@ class SignInPhoneViewController: UIViewController {
         self.view.backgroundColor = UIColor.newsChefWhiteColor()
         
     }
+    
+    func navigateToMainAppScreen() {
+        self.performSegue(withIdentifier: "showTabbedView", sender: self)
+    }
 
     @IBAction func onNextButtonTapped(_ sender: AnyObject) {
     
@@ -49,11 +53,12 @@ class SignInPhoneViewController: UIViewController {
             
             Digits.sharedInstance().authenticate(with: nil, configuration:configuration!) { (session, error) in
                 if session != nil {
-                    // Navigate to the main app screen to select a theme.
-                
+                    
+                    // Navigate to the tabbed view
+                    self.navigateToMainAppScreen()
 
                 } else {
-                    
+                    NSLog("Authentication error: %@", error!.localizedDescription)
                 }
             }
         

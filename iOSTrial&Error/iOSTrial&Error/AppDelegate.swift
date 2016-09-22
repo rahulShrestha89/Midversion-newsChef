@@ -23,7 +23,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         Fabric.with([Crashlytics.self,Digits.self])
 
-        // Override point for customization after application launch.
+        // Check for an existing Digits session before presenting the sign in screen.
+        // if the user is already in session then
+        // will be redirected towards the tabbed page
+        if (Digits.sharedInstance().session() == nil) {
+            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+            let postSignInViewController: AnyObject! = storyboard.instantiateViewController(withIdentifier: "LandingPageViewController")
+            window?.rootViewController = postSignInViewController as? UIViewController
+        }
+        
         return true
     }
 
