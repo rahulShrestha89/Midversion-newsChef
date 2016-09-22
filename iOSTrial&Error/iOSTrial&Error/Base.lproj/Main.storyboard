@@ -315,7 +315,7 @@
                                 <state key="normal" title="Sign Out"/>
                                 <connections>
                                     <action selector="onSignOutButtonTapped:" destination="a5v-WV-4Tk" eventType="touchUpInside" id="NA6-Kx-GKa"/>
-                                    <segue destination="PHv-D7-8nH" kind="unwind" unwindAction="unWindToLandingPageWithSegue:" id="4j9-a5-O7g"/>
+                                    <segue destination="BYZ-38-t0r" kind="presentation" identifier="showHomeAfterLogOut" id="1qW-VY-RL2"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -328,7 +328,6 @@
                     <tabBarItem key="tabBarItem" title="Account" image="userTab" id="zL7-f1-IKh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1qc-ul-HuQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <exit id="PHv-D7-8nH" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3076" y="447"/>
         </scene>
@@ -436,13 +435,14 @@
                     <connections>
                         <outlet property="imageView" destination="ZPI-PP-aDK" id="0fl-NN-a1A"/>
                         <outlet property="mainTextView" destination="7dR-uk-FyO" id="ATe-zd-kZ2"/>
+                        <outlet property="skipButton" destination="CDn-1J-jHC" id="dtB-8H-fKw"/>
                         <outlet property="textView" destination="jUB-EA-XWL" id="0Q7-C6-uag"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MI1-Ko-vT9" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="yag-qM-f8J" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-175.19999999999999" y="-838.83058470764627"/>
+            <point key="canvasLocation" x="-175" y="-931"/>
         </scene>
     </scenes>
     <resources>

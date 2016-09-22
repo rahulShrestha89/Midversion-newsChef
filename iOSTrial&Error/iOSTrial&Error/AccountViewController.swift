@@ -11,11 +11,15 @@ import DigitsKit
 
 class AccountViewController: UIViewController {
 
+    // logout user here
     @IBAction func onSignOutButtonTapped(_ sender: AnyObject) {
         
         Digits.sharedInstance().logOut()
         
+        performSegue(withIdentifier: "showHomeAfterLogOut", sender: self)
+        
     }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

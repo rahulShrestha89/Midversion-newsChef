@@ -15,6 +15,7 @@ class LookUpChildViewController: UIViewController {
     }
     @IBOutlet weak var imageView: UIImageView!
     
+    @IBOutlet weak var skipButton: UIButton!
     @IBOutlet weak var textView: UILabel!
     @IBOutlet weak var mainTextView: UILabel!
     var pageIndex: Int = 0
@@ -32,6 +33,14 @@ class LookUpChildViewController: UIViewController {
         self.mainTextView.text = self.strMainTitle
         
         self.textView.font = UIFont(name: "Avenir-Light", size: 19.0)
-
+        
+        if(self.mainTextView.text=="Share")
+        {
+            skipButton.isHidden = false
+        }
+        else
+        {
+            skipButton.isHidden = true
+        }
     }
 }

@@ -60,6 +60,7 @@ class SignInPhoneViewController: UIViewController {
                 } else {
                     NSLog("Authentication error: %@", error!.localizedDescription)
                 }
+                
             }
         
         }
