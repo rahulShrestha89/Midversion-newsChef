@@ -24,6 +24,7 @@
 		534EEC1F1D90E632008D7E6E /* TextFieldsEffects.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534EEC141D90E632008D7E6E /* TextFieldsEffects.swift */; };
 		534EEC201D90E632008D7E6E /* YokoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534EEC151D90E632008D7E6E /* YokoTextField.swift */; };
 		534EEC211D90E632008D7E6E /* YoshikoTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534EEC161D90E632008D7E6E /* YoshikoTextField.swift */; };
+		536E76DF1D93AC5000A436DE /* SearchNewsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536E76DE1D93AC5000A436DE /* SearchNewsViewController.swift */; };
 		536F4A2C1D85E857006093A0 /* LandingPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F4A2B1D85E857006093A0 /* LandingPageViewController.swift */; };
 		536F4A2E1D85FE1D006093A0 /* Luna.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 536F4A2D1D85FD8D006093A0 /* Luna.ttf */; };
 		536F4A301D8602D6006093A0 /* ColorConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 536F4A2F1D8602D6006093A0 /* ColorConstants.swift */; };
@@ -64,6 +65,7 @@
 		534EEC141D90E632008D7E6E /* TextFieldsEffects.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextFieldsEffects.swift; sourceTree = "<group>"; };
 		534EEC151D90E632008D7E6E /* YokoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YokoTextField.swift; sourceTree = "<group>"; };
 		534EEC161D90E632008D7E6E /* YoshikoTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = YoshikoTextField.swift; sourceTree = "<group>"; };
+		536E76DE1D93AC5000A436DE /* SearchNewsViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchNewsViewController.swift; sourceTree = "<group>"; };
 		536F4A2B1D85E857006093A0 /* LandingPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LandingPageViewController.swift; sourceTree = "<group>"; };
 		536F4A2D1D85FD8D006093A0 /* Luna.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = Luna.ttf; sourceTree = "<group>"; };
 		536F4A2F1D8602D6006093A0 /* ColorConstants.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorConstants.swift; sourceTree = "<group>"; };
@@ -184,6 +186,7 @@
 				5313C4631D88028300D434DB /* LookUpChildViewController.swift */,
 				53D99B4F1D90A2EC00CC1FA5 /* PrivacyPolicyViewController.swift */,
 				53D99B511D90BCBA00CC1FA5 /* SignInPhoneViewController.swift */,
+				536E76DE1D93AC5000A436DE /* SearchNewsViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -375,6 +378,7 @@
 				534EEC1D1D90E632008D7E6E /* MadokaTextField.swift in Sources */,
 				534EEC181D90E632008D7E6E /* HoshiTextField.swift in Sources */,
 				534EEC211D90E632008D7E6E /* YoshikoTextField.swift in Sources */,
+				536E76DF1D93AC5000A436DE /* SearchNewsViewController.swift in Sources */,
 				533603F01D80EE3300EAE5A6 /* iOSTrial_Error.xcdatamodeld in Sources */,
 				534EEC1E1D90E632008D7E6E /* MinoruTextField.swift in Sources */,
 				534EEC1C1D90E632008D7E6E /* KaedeTextField.swift in Sources */,
