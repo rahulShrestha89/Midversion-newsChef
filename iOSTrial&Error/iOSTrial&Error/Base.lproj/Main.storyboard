@@ -200,7 +200,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TEe-WF-ah2" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="L1v-Cg-0yo" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-1" y="1263"/>
+            <point key="canvasLocation" x="-329" y="1162"/>
         </scene>
         <!--Search-->
         <scene sceneID="5zU-jR-vta">
@@ -259,7 +259,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sL7-qF-cUL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1441" y="548"/>
+            <point key="canvasLocation" x="1476" y="358"/>
         </scene>
         <!--Tabs-->
         <scene sceneID="1v8-9M-esO">
@@ -297,12 +297,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EbW-rb-Pkm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2145" y="97"/>
+            <point key="canvasLocation" x="2412" y="-56"/>
         </scene>
         <!--Account-->
         <scene sceneID="mrM-l2-Ju9">
             <objects>
-                <viewController id="a5v-WV-4Tk" sceneMemberID="viewController">
+                <viewController id="a5v-WV-4Tk" customClass="AccountViewController" customModule="iOSTrial_Error" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="ikk-rw-t9u"/>
                         <viewControllerLayoutGuide type="bottom" id="OnI-y9-ODG"/>
@@ -310,11 +310,25 @@
                     <view key="view" contentMode="scaleToFill" id="bgm-J5-6R3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jSY-gs-Xia">
+                                <state key="normal" title="Sign Out"/>
+                                <connections>
+                                    <action selector="onSignOutButtonTapped:" destination="a5v-WV-4Tk" eventType="touchUpInside" id="NA6-Kx-GKa"/>
+                                    <segue destination="PHv-D7-8nH" kind="unwind" unwindAction="unWindToLandingPageWithSegue:" id="4j9-a5-O7g"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="jSY-gs-Xia" firstAttribute="centerX" secondItem="bgm-J5-6R3" secondAttribute="centerX" id="L3u-po-IZl"/>
+                            <constraint firstItem="jSY-gs-Xia" firstAttribute="centerY" secondItem="bgm-J5-6R3" secondAttribute="centerY" id="OvY-Tr-hgv"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Account" image="userTab" id="zL7-f1-IKh"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1qc-ul-HuQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="PHv-D7-8nH" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
             <point key="canvasLocation" x="3076" y="447"/>
         </scene>
@@ -397,6 +411,15 @@
                                     <constraint firstAttribute="width" constant="150" id="lAu-6H-4Ce"/>
                                 </constraints>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CDn-1J-jHC">
+                                <state key="normal" title="Skip">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onSkipButtonTapped:" destination="MgI-Hv-1AO" eventType="touchUpInside" id="1is-co-WX4"/>
+                                    <segue destination="yag-qM-f8J" kind="unwind" unwindAction="unWindToLandingPageWithSegue:" id="t3R-qc-FQJ"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
@@ -405,6 +428,8 @@
                             <constraint firstItem="7dR-uk-FyO" firstAttribute="centerX" secondItem="q7h-dV-JZt" secondAttribute="centerX" id="M3m-Vb-iOA"/>
                             <constraint firstItem="7dR-uk-FyO" firstAttribute="top" secondItem="ZPI-PP-aDK" secondAttribute="bottom" constant="101" id="MBi-eD-YD8"/>
                             <constraint firstItem="ZPI-PP-aDK" firstAttribute="centerX" secondItem="q7h-dV-JZt" secondAttribute="centerX" id="Mfb-0r-cVr"/>
+                            <constraint firstItem="CDn-1J-jHC" firstAttribute="centerX" secondItem="q7h-dV-JZt" secondAttribute="centerX" id="fiN-bE-4w2"/>
+                            <constraint firstItem="AQm-7G-1oO" firstAttribute="top" secondItem="CDn-1J-jHC" secondAttribute="bottom" constant="70" id="sAt-AV-ejT"/>
                             <constraint firstItem="jUB-EA-XWL" firstAttribute="centerX" secondItem="q7h-dV-JZt" secondAttribute="centerX" id="xVP-2R-Dol"/>
                         </constraints>
                     </view>
@@ -415,8 +440,9 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="MI1-Ko-vT9" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="yag-qM-f8J" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-175" y="-838"/>
+            <point key="canvasLocation" x="-175.19999999999999" y="-838.83058470764627"/>
         </scene>
     </scenes>
     <resources>

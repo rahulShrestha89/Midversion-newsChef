@@ -9,6 +9,10 @@
 import UIKit
 
 class LookUpChildViewController: UIViewController {
+    @IBAction func onSkipButtonTapped(_ sender: AnyObject) {
+    
+    
+    }
     @IBOutlet weak var imageView: UIImageView!
     
     @IBOutlet weak var textView: UILabel!
