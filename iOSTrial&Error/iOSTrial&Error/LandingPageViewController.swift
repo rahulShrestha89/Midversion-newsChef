@@ -26,6 +26,7 @@ class LandingPageViewController: UIViewController {
         decorateButton(lookAroundButton, color: UIColor.newsChefBlueColor())
         
     }
+    
 
     @IBAction func onPrivacyPolicyButtonPressed(_ sender: AnyObject) {
         self.performSegue(withIdentifier: "showPrivacyPolicy", sender: self)
@@ -48,8 +49,10 @@ class LandingPageViewController: UIViewController {
         Digits.sharedInstance().authenticate(with: nil, configuration:configuration!) { (session, error) in
             if session != nil {
                 
-                // Navigate to the tabbed view
-                self.performSegue(withIdentifier: "showSignInView", sender: self)
+                
+                // this is temp: requires changes after python server setup
+                // Navigate to the sign in vew
+                self.performSegue(withIdentifier: "showSignIn", sender: self)
                 
                 Crashlytics.sharedInstance().setUserIdentifier(session!.userID)
                 

@@ -47,7 +47,6 @@
                                 </state>
                                 <connections>
                                     <action selector="onSignInButtonTapped:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qOc-AG-W1g"/>
-                                    <segue destination="93v-dr-r8u" kind="presentation" identifier="showSignInView" id="VT3-zR-5Xh"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xB-yf-1df">
@@ -95,6 +94,7 @@
                         <outlet property="lookAroundButton" destination="5xB-yf-1df" id="N7U-Kg-Jvh"/>
                         <outlet property="privacyPolicyButton" destination="qhX-mM-S4A" id="iLa-xK-5oK"/>
                         <outlet property="signInButton" destination="3kd-5f-s2S" id="N4k-s0-Oob"/>
+                        <segue destination="93v-dr-r8u" kind="presentation" identifier="showSignIn" id="BhT-Re-kFg"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -189,6 +189,7 @@
                             <constraint firstItem="h3m-r7-UbL" firstAttribute="top" secondItem="hDg-5F-Vgx" secondAttribute="bottom" constant="23" id="eVY-iV-FQU"/>
                             <constraint firstItem="hDg-5F-Vgx" firstAttribute="top" secondItem="Wbw-CV-Iax" secondAttribute="bottom" constant="65" id="eqY-Ms-QmK"/>
                             <constraint firstItem="h3m-r7-UbL" firstAttribute="centerX" secondItem="iye-QL-vXU" secondAttribute="centerX" id="hdi-TF-C29"/>
+                            <constraint firstItem="Sbo-HX-HPO" firstAttribute="top" secondItem="h3m-r7-UbL" secondAttribute="bottom" constant="160.5" id="weO-ou-YnJ"/>
                         </constraints>
                     </view>
                     <connections>
@@ -200,7 +201,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TEe-WF-ah2" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="L1v-Cg-0yo" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="-967" y="921"/>
+            <point key="canvasLocation" x="-233" y="1273"/>
         </scene>
         <!--Search-->
         <scene sceneID="5zU-jR-vta">
