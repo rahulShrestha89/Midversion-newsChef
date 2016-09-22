@@ -219,7 +219,26 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="hfX-3T-eJn" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1822" y="1411"/>
+            <point key="canvasLocation" x="993" y="1324"/>
+        </scene>
+        <!--Trending-->
+        <scene sceneID="JMG-bU-7Yz">
+            <objects>
+                <viewController id="KWX-vV-338" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="ngM-dP-n00"/>
+                        <viewControllerLayoutGuide type="bottom" id="RNI-jZ-rhT"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="NhZ-sr-oem">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Trending" image="trendingTab" id="Ej3-Lm-hi4"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="BRq-7L-ICq" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1729" y="1310"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="XxC-b7-QxV">
@@ -232,6 +251,8 @@
                     </tabBar>
                     <connections>
                         <segue destination="gkm-n4-qR1" kind="relationship" relationship="viewControllers" id="tTA-TK-h1V"/>
+                        <segue destination="isB-QH-nG5" kind="relationship" relationship="viewControllers" id="kPg-Nr-UfS"/>
+                        <segue destination="KWX-vV-338" kind="relationship" relationship="viewControllers" id="Yb0-O6-St3"/>
                         <segue destination="v70-cB-dVQ" kind="relationship" relationship="viewControllers" id="Q8V-Zx-QF3"/>
                         <segue destination="a5v-WV-4Tk" kind="relationship" relationship="viewControllers" id="nyd-wT-pdI"/>
                     </connections>
@@ -239,6 +260,25 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sL7-qF-cUL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1441" y="548"/>
+        </scene>
+        <!--Tabs-->
+        <scene sceneID="1v8-9M-esO">
+            <objects>
+                <viewController id="isB-QH-nG5" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="shM-EX-sc0"/>
+                        <viewControllerLayoutGuide type="bottom" id="sYM-c7-9kF"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="XxO-nq-5Nu">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Tabs" image="tabTabbar" id="7J7-QO-1u7"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="yLu-5v-lVd" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2412" y="921"/>
         </scene>
         <!--Feed-->
         <scene sceneID="Rcv-fg-Ahg">
@@ -276,7 +316,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1qc-ul-HuQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2473" y="779"/>
+            <point key="canvasLocation" x="3076" y="447"/>
         </scene>
         <!--Look Around Page View Controller-->
         <scene sceneID="aBD-Z7-psQ">
@@ -381,9 +421,11 @@
     </scenes>
     <resources>
         <image name="LandingPageBackground" width="1280" height="960"/>
-        <image name="feedTab" width="25" height="25"/>
+        <image name="feedTab" width="50" height="50"/>
         <image name="next" width="64" height="64"/>
-        <image name="searchTab" width="25" height="25"/>
+        <image name="searchTab" width="50" height="50"/>
+        <image name="tabTabbar" width="50" height="50"/>
+        <image name="trendingTab" width="50" height="50"/>
         <image name="userTab" width="50" height="50"/>
     </resources>
 </document>
