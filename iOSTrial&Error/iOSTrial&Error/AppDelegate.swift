@@ -21,6 +21,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
+        UITabBar.appearance().tintColor = UIColor.newsChefMainColor()
+        
         Fabric.with([Crashlytics.self,Digits.self])
 
         // Check for an existing Digits session before presenting the sign in screen.

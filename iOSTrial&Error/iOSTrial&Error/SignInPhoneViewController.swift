@@ -30,7 +30,7 @@ class SignInPhoneViewController: UIViewController {
     }
 
     @IBAction func onNextButtonTapped(_ sender: AnyObject) {
-    
+        
         if(firstName.text=="")
         {
             self.firstName.shake(20,withDelta: 7.0,speed: 0.03
@@ -44,24 +44,7 @@ class SignInPhoneViewController: UIViewController {
         }
         if ((firstName.text != "") && (lastName.text != ""))
         {
-            // Create a Digits appearance with Cannonball colors.
-            let configuration = DGTAuthenticationConfiguration(accountFields: .defaultOptionMask)
-            
-            configuration?.appearance = DGTAppearance()
-            configuration?.appearance.backgroundColor = UIColor.newsChefWhiteColor()
-            configuration?.appearance.accentColor = UIColor.newsChefMainColor()
-            
-            Digits.sharedInstance().authenticate(with: nil, configuration:configuration!) { (session, error) in
-                if session != nil {
-                    
-                    // Navigate to the tabbed view
-                    self.navigateToMainAppScreen()
-
-                } else {
-                    NSLog("Authentication error: %@", error!.localizedDescription)
-                }
-                
-            }
+           self.navigateToMainAppScreen()
         
         }
     }

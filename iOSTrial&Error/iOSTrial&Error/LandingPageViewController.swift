@@ -8,6 +8,7 @@
 
 import UIKit
 import DigitsKit
+import Crashlytics
 
 
 class LandingPageViewController: UIViewController {
@@ -35,7 +36,31 @@ class LandingPageViewController: UIViewController {
     }
 
     @IBAction func onSignInButtonTapped(_ sender: AnyObject) {
-        self.performSegue(withIdentifier: "showSignInView", sender: self)
+        
+        // Create a Digits appearance with Cannonball colors.
+        let configuration = DGTAuthenticationConfiguration(accountFields: .defaultOptionMask)
+        
+        configuration?.appearance = DGTAppearance()
+        configuration?.appearance.backgroundColor = UIColor.newsChefWhiteColor()
+        configuration?.appearance.accentColor = UIColor.newsChefMainColor()
+        
+        
+        Digits.sharedInstance().authenticate(with: nil, configuration:configuration!) { (session, error) in
+            if session != nil {
+                
+                // Navigate to the tabbed view
+                self.performSegue(withIdentifier: "showSignInView", sender: self)
+                
+                Crashlytics.sharedInstance().setUserIdentifier(session!.userID)
+                
+                print("moving segue")
+            } else {
+                NSLog("Authentication error: %@", error!.localizedDescription)
+            }
+            
+        }
+        
+        
     }
     
     // this refers to the unwind segue from other controllers
