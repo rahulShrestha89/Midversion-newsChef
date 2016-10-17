@@ -10,11 +10,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iOSTrial&amp;Error/LandingPageViewController.swift"
-            timestampString = "496273440.353047"
+            timestampString = "498434334.013695"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "84"
-            endingLineNumber = "84"
+            startingLineNumber = "89"
+            endingLineNumber = "89"
             landmarkName = "decorateButton(_:color:)"
             landmarkType = "9">
          </BreakpointContent>

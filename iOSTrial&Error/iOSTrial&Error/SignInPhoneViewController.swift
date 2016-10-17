@@ -18,6 +18,7 @@ class SignInPhoneViewController: UIViewController {
     @IBOutlet weak var lastName: AkiraTextField!
 
     @IBOutlet weak var firstName: AkiraTextField!
+   
     override func viewDidLoad() {
         super.viewDidLoad()
 

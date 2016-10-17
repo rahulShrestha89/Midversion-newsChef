@@ -52,6 +52,11 @@ class LandingPageViewController: UIViewController {
                 
                 // this is temp: requires changes after python server setup
                 // Navigate to the sign in vew
+                
+                self.navigationController?.popViewController(animated: true)
+                
+                self.dismiss(animated: true, completion: nil)
+                
                 self.performSegue(withIdentifier: "showSignIn", sender: self)
                 
                 Crashlytics.sharedInstance().setUserIdentifier(session!.userID)
