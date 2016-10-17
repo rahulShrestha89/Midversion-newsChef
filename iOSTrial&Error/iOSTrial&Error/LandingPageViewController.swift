@@ -9,6 +9,7 @@
 import UIKit
 import DigitsKit
 import Crashlytics
+import FirebaseDatabase
 
 
 class LandingPageViewController: UIViewController {
@@ -17,7 +18,7 @@ class LandingPageViewController: UIViewController {
     @IBOutlet weak var signInButton: UIButton!
  
     @IBOutlet weak var lookAroundButton: UIButton!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -38,6 +39,8 @@ class LandingPageViewController: UIViewController {
 
     @IBAction func onSignInButtonTapped(_ sender: AnyObject) {
         
+        let childRef = FIRDatabase.database().reference(withPath: "signedup-users")
+        
         // Create a Digits appearance with Cannonball colors.
         let configuration = DGTAuthenticationConfiguration(accountFields: .defaultOptionMask)
         
@@ -45,10 +48,8 @@ class LandingPageViewController: UIViewController {
         configuration?.appearance.backgroundColor = UIColor.newsChefWhiteColor()
         configuration?.appearance.accentColor = UIColor.newsChefMainColor()
         
-        
         Digits.sharedInstance().authenticate(with: nil, configuration:configuration!) { (session, error) in
             if session != nil {
-                
                 
                 // this is temp: requires changes after python server setup
                 // Navigate to the sign in vew
@@ -57,11 +58,18 @@ class LandingPageViewController: UIViewController {
                 
                 self.dismiss(animated: true, completion: nil)
                 
-                self.performSegue(withIdentifier: "showSignIn", sender: self)
-                
                 Crashlytics.sharedInstance().setUserIdentifier(session!.userID)
                 
-                print("moving segue")
+                // check if this number is already regsitered on the FIREBASE database
+                let userNumber = session?.phoneNumber
+                let currentSession = session?.userID
+                let userInfo = PhoneNumber_FireBase(phoneNumber: userNumber!,
+                                              userSession: currentSession!)
+                
+                childRef.setValue(userInfo.toAnyObject())
+                
+                self.performSegue(withIdentifier: "showSignIn", sender: self)
+
             } else {
                 NSLog("Authentication error: %@", error!.localizedDescription)
             }

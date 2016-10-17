@@ -13,6 +13,8 @@
 		533603F01D80EE3300EAE5A6 /* iOSTrial_Error.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 533603EE1D80EE3300EAE5A6 /* iOSTrial_Error.xcdatamodeld */; };
 		533603F21D80EE3300EAE5A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 533603F11D80EE3300EAE5A6 /* Assets.xcassets */; };
 		533603F51D80EE3300EAE5A6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 533603F31D80EE3300EAE5A6 /* LaunchScreen.storyboard */; };
+		534E14541DB58B93002D1884 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 534E14531DB58B93002D1884 /* GoogleService-Info.plist */; };
+		534E14561DB595DE002D1884 /* PhoneNumber_FireBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534E14551DB595DE002D1884 /* PhoneNumber_FireBase.swift */; };
 		534EEC171D90E632008D7E6E /* AkiraTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534EEC0B1D90E632008D7E6E /* AkiraTextField.swift */; };
 		534EEC181D90E632008D7E6E /* HoshiTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 534EEC0C1D90E632008D7E6E /* HoshiTextField.swift */; };
 		534EEC191D90E632008D7E6E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 534EEC0D1D90E632008D7E6E /* Info.plist */; };
@@ -54,6 +56,8 @@
 		533603F11D80EE3300EAE5A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		533603F41D80EE3300EAE5A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		533603F61D80EE3300EAE5A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		534E14531DB58B93002D1884 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		534E14551DB595DE002D1884 /* PhoneNumber_FireBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhoneNumber_FireBase.swift; sourceTree = "<group>"; };
 		534EEC0B1D90E632008D7E6E /* AkiraTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AkiraTextField.swift; sourceTree = "<group>"; };
 		534EEC0C1D90E632008D7E6E /* HoshiTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HoshiTextField.swift; sourceTree = "<group>"; };
 		534EEC0D1D90E632008D7E6E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -105,6 +109,7 @@
 		533603DB1D80EE3300EAE5A6 = {
 			isa = PBXGroup;
 			children = (
+				534E14531DB58B93002D1884 /* GoogleService-Info.plist */,
 				534EEC0A1D90E5BF008D7E6E /* TextFieldEffects */,
 				53FD701F1D85CC0E00559FF3 /* TwitterCore.framework */,
 				53D3599B1D8126E00094C935 /* TwitterCore.framework */,
@@ -176,6 +181,7 @@
 		53FD70211D85CCA500559FF3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				534E14551DB595DE002D1884 /* PhoneNumber_FireBase.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -288,6 +294,7 @@
 			files = (
 				534EEC191D90E632008D7E6E /* Info.plist in Resources */,
 				53D99B4E1D90A09E00CC1FA5 /* TheLastCall.ttf in Resources */,
+				534E14541DB58B93002D1884 /* GoogleService-Info.plist in Resources */,
 				53EE24B51D812821000BDDFB /* DigitsKitResources.bundle in Resources */,
 				536F4A2E1D85FE1D006093A0 /* Luna.ttf in Resources */,
 				533603F51D80EE3300EAE5A6 /* LaunchScreen.storyboard in Resources */,
@@ -388,6 +395,7 @@
 				534EEC1C1D90E632008D7E6E /* KaedeTextField.swift in Sources */,
 				534EEC201D90E632008D7E6E /* YokoTextField.swift in Sources */,
 				53AF09F01D87A59F00FF07D6 /* Images.swift in Sources */,
+				534E14561DB595DE002D1884 /* PhoneNumber_FireBase.swift in Sources */,
 				534EEC1A1D90E632008D7E6E /* IsaoTextField.swift in Sources */,
 				53AF09EC1D87796500FF07D6 /* LookAroundPageViewController.swift in Sources */,
 				53D99B501D90A2EC00CC1FA5 /* PrivacyPolicyViewController.swift in Sources */,

@@ -11,7 +11,7 @@ import CoreData
 import Fabric
 import Crashlytics
 import DigitsKit
-
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -33,6 +33,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
             let postSignInViewController: AnyObject! = storyboard.instantiateViewController(withIdentifier: "LandingPageViewController")
             window?.rootViewController = postSignInViewController as? UIViewController
         }
+        
+        FIRApp.configure()
         
         return true
     }

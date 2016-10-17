@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		16EF8813509811F3E6B2008F62DCD797 /* Pods-iOSTrial&Error-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 570BA8B64DC7F881C009AFE3C1E661E8 /* Pods-iOSTrial&Error-dummy.m */; };
-		3B1AEE4AA934378F1FC6B0C10BF0E0D6 /* UITextField+Shake.h in Headers */ = {isa = PBXBuildFile; fileRef = 36F6C12FF1F62B73AE904D6D27C46D40 /* UITextField+Shake.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		3B1AEE4AA934378F1FC6B0C10BF0E0D6 /* UITextField+Shake.h in Headers */ = {isa = PBXBuildFile; fileRef = 397C831DD97A9139F84412D84A775D72 /* UITextField+Shake.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		3B45ABE0E3C44227013D845B0A149711 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
 		76276294152CC4E08C312F53FDA4622F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */; };
-		9B72C9B9274EBCA3820B573480274C66 /* UITextField+Shake-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A2EEC5829F3B13C4DEC14143F997C09 /* UITextField+Shake-dummy.m */; };
-		B9FEF14BF528FC79ED29C768ACA8DBE4 /* UITextField+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = 39D2CBD9E51CFAE1DF30040F5B8AB61B /* UITextField+Shake.m */; };
-		E2D53ABB934B026653CB9983CF957FF3 /* UITextField+Shake-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B767214643AFA0295A0EAACD7B42484D /* UITextField+Shake-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		9B72C9B9274EBCA3820B573480274C66 /* UITextField+Shake-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = D385F0D86BEB6230AC32C10A5FFF9E30 /* UITextField+Shake-dummy.m */; };
+		B9FEF14BF528FC79ED29C768ACA8DBE4 /* UITextField+Shake.m in Sources */ = {isa = PBXBuildFile; fileRef = AB4320306751F1D22DE42E0B0654259F /* UITextField+Shake.m */; };
+		E2D53ABB934B026653CB9983CF957FF3 /* UITextField+Shake-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 901FA888AE430EEB1ECF9E036AADF1D3 /* UITextField+Shake-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F9D47E3CE8E6CF07B927738B0C244239 /* Pods-iOSTrial&Error-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 942457E3EA29E9BB7014A9FEF026A718 /* Pods-iOSTrial&Error-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
 /* End PBXBuildFile section */
 
@@ -28,27 +28,35 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		06AE5990C6A7DC142415946613B2AE4C /* UITextField+Shake.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "UITextField+Shake.modulemap"; sourceTree = "<group>"; };
-		0CA53739476E4131A670EB102D962897 /* UITextField+Shake-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITextField+Shake-prefix.pch"; sourceTree = "<group>"; };
-		1E75EC321AA4AB16ECE91D930F00505B /* UITextField+Shake.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UITextField+Shake.xcconfig"; sourceTree = "<group>"; };
-		2A2EEC5829F3B13C4DEC14143F997C09 /* UITextField+Shake-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Shake-dummy.m"; sourceTree = "<group>"; };
+		0B937D61865C6E69E006E8201122AF70 /* UITextField+Shake-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITextField+Shake-prefix.pch"; sourceTree = "<group>"; };
+		14A073484C30AD64649902AB0E4B7466 /* FirebaseAnalytics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseAnalytics.framework; path = Frameworks/frameworks/FirebaseAnalytics.framework; sourceTree = "<group>"; };
+		1B53F94392A6F560B1B12F17D2D4602B /* FirebaseInstanceID.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseInstanceID.framework; path = Frameworks/frameworks/FirebaseInstanceID.framework; sourceTree = "<group>"; };
 		33C4C237DD7399D28226AA6E7980A612 /* Pods-iOSTrial&Error-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-iOSTrial&Error-acknowledgements.markdown"; sourceTree = "<group>"; };
-		36F6C12FF1F62B73AE904D6D27C46D40 /* UITextField+Shake.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+Shake.h"; path = "Source/UITextField+Shake.h"; sourceTree = "<group>"; };
-		39D2CBD9E51CFAE1DF30040F5B8AB61B /* UITextField+Shake.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+Shake.m"; path = "Source/UITextField+Shake.m"; sourceTree = "<group>"; };
+		35115FACEA4DB0E1E010A92D20501085 /* FIRInstanceID.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = FIRInstanceID.h; path = Sources/FIRInstanceID.h; sourceTree = "<group>"; };
+		397C831DD97A9139F84412D84A775D72 /* UITextField+Shake.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = "UITextField+Shake.h"; path = "Source/UITextField+Shake.h"; sourceTree = "<group>"; };
+		4485801F0DEAFADF5491A6CA7CFE593B /* Firebase.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Firebase.h; path = Analytics/Sources/Firebase.h; sourceTree = "<group>"; };
 		570BA8B64DC7F881C009AFE3C1E661E8 /* Pods-iOSTrial&Error-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-iOSTrial&Error-dummy.m"; sourceTree = "<group>"; };
+		6E703C40E659E97C9F91AD85DECAAF8A /* UITextField+Shake.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "UITextField+Shake.modulemap"; sourceTree = "<group>"; };
+		84927A23DE164657A025F3BAEE47367C /* GoogleUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleUtilities.framework; path = Frameworks/GoogleUtilities.framework; sourceTree = "<group>"; };
 		8F324AEDF6A028F30B10777C467E248E /* Pods-iOSTrial&Error-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOSTrial&Error-frameworks.sh"; sourceTree = "<group>"; };
+		901FA888AE430EEB1ECF9E036AADF1D3 /* UITextField+Shake-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITextField+Shake-umbrella.h"; sourceTree = "<group>"; };
 		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		942457E3EA29E9BB7014A9FEF026A718 /* Pods-iOSTrial&Error-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-iOSTrial&Error-umbrella.h"; sourceTree = "<group>"; };
 		9739E428B57762312A337C01CE27AAE8 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		990725177BAE1009DB041BADBE64EF06 /* Pods-iOSTrial&Error-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-iOSTrial&Error-acknowledgements.plist"; sourceTree = "<group>"; };
 		A8180DD8FA98AB5DE4B49FC9799F40F9 /* Pods-iOSTrial&Error.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOSTrial&Error.debug.xcconfig"; sourceTree = "<group>"; };
+		A912380C2276602610223F62DA5688CC /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A958124DCDA4DDAB7D977B92FB34356F /* Pods-iOSTrial&Error.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-iOSTrial&Error.modulemap"; sourceTree = "<group>"; };
-		B767214643AFA0295A0EAACD7B42484D /* UITextField+Shake-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UITextField+Shake-umbrella.h"; sourceTree = "<group>"; };
+		AB4320306751F1D22DE42E0B0654259F /* UITextField+Shake.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; name = "UITextField+Shake.m"; path = "Source/UITextField+Shake.m"; sourceTree = "<group>"; };
+		B5D17CE0E8414C669B5743343C89D00B /* FirebaseDatabase.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FirebaseDatabase.framework; path = Frameworks/FirebaseDatabase.framework; sourceTree = "<group>"; };
 		CEC22C73C1608DFA5D5D78BDCB218219 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS9.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		D0691CD6E4818B6A27485ED8D7773188 /* GoogleSymbolUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleSymbolUtilities.framework; path = Frameworks/GoogleSymbolUtilities.framework; sourceTree = "<group>"; };
+		D385F0D86BEB6230AC32C10A5FFF9E30 /* UITextField+Shake-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "UITextField+Shake-dummy.m"; sourceTree = "<group>"; };
 		D92053CFCEFD408A5119A68E09DE4B65 /* Pods-iOSTrial&Error.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-iOSTrial&Error.release.xcconfig"; sourceTree = "<group>"; };
+		E0DE9A9C40113F182A9F9C8F4685AC1F /* UITextField+Shake.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "UITextField+Shake.xcconfig"; sourceTree = "<group>"; };
 		E1F943374BC1B647A91DD44F3510D08A /* UITextField_Shake.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = UITextField_Shake.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E8188083F3639EF256B6301ABFEF33C9 /* GoogleInterchangeUtilities.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GoogleInterchangeUtilities.framework; path = Frameworks/GoogleInterchangeUtilities.framework; sourceTree = "<group>"; };
 		F2EDF9D30BF082E4649D9B7862709759 /* Pods_iOSTrial_Error.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSTrial_Error.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F7AAFD322321D16EF579944C8FEFB01C /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FA262F165FD901A4F8277D72705DA231 /* Pods-iOSTrial&Error-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-iOSTrial&Error-resources.sh"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -72,18 +80,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		09705294BAF2910CC701CBADE11DC3EF /* Support Files */ = {
+		0FB8D3332B05BACEBB0029EA920A41F8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				F7AAFD322321D16EF579944C8FEFB01C /* Info.plist */,
-				06AE5990C6A7DC142415946613B2AE4C /* UITextField+Shake.modulemap */,
-				1E75EC321AA4AB16ECE91D930F00505B /* UITextField+Shake.xcconfig */,
-				2A2EEC5829F3B13C4DEC14143F997C09 /* UITextField+Shake-dummy.m */,
-				0CA53739476E4131A670EB102D962897 /* UITextField+Shake-prefix.pch */,
-				B767214643AFA0295A0EAACD7B42484D /* UITextField+Shake-umbrella.h */,
+				B5D17CE0E8414C669B5743343C89D00B /* FirebaseDatabase.framework */,
 			);
-			name = "Support Files";
-			path = "../Target Support Files/UITextField+Shake";
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2BB062275159837E258EDC64B7F3969F /* FirebaseInstanceID */ = {
+			isa = PBXGroup;
+			children = (
+				35115FACEA4DB0E1E010A92D20501085 /* FIRInstanceID.h */,
+				CE695455CDDD3632ABADE01357F60FC8 /* Frameworks */,
+			);
+			path = FirebaseInstanceID;
 			sourceTree = "<group>";
 		};
 		2F20333BB06A3608B20E08A76B251169 /* Targets Support Files */ = {
@@ -94,6 +105,14 @@
 			name = "Targets Support Files";
 			sourceTree = "<group>";
 		};
+		3A58D0DCE8C4F233EDF388420B121101 /* FirebaseAnalytics */ = {
+			isa = PBXGroup;
+			children = (
+				D1764B0414B21D39A706FF6806A92159 /* Frameworks */,
+			);
+			path = FirebaseAnalytics;
+			sourceTree = "<group>";
+		};
 		3DCAB2B7CDE207B3958B6CB957FCC758 /* iOS */ = {
 			isa = PBXGroup;
 			children = (
@@ -102,23 +121,68 @@
 			name = iOS;
 			sourceTree = "<group>";
 		};
+		4070E377A851E2AC2EC906DC39E6E912 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				84927A23DE164657A025F3BAEE47367C /* GoogleUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		40D09BB9883A911BC0382B60DBE5AE6D /* GoogleInterchangeUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				56B591DC6CB67BE6E0C482A6AF094C46 /* Frameworks */,
+			);
+			path = GoogleInterchangeUtilities;
+			sourceTree = "<group>";
+		};
+		56B591DC6CB67BE6E0C482A6AF094C46 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E8188083F3639EF256B6301ABFEF33C9 /* GoogleInterchangeUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5E9A0079B1EB1EAC697D4F20197F327F /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				A912380C2276602610223F62DA5688CC /* Info.plist */,
+				6E703C40E659E97C9F91AD85DECAAF8A /* UITextField+Shake.modulemap */,
+				E0DE9A9C40113F182A9F9C8F4685AC1F /* UITextField+Shake.xcconfig */,
+				D385F0D86BEB6230AC32C10A5FFF9E30 /* UITextField+Shake-dummy.m */,
+				0B937D61865C6E69E006E8201122AF70 /* UITextField+Shake-prefix.pch */,
+				901FA888AE430EEB1ECF9E036AADF1D3 /* UITextField+Shake-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/UITextField+Shake";
+			sourceTree = "<group>";
+		};
+		65249E43051A100CA6EC954C99DBDA55 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F73995AFDDB23D2C0E5F12645170DEE5 /* Firebase */,
+				3A58D0DCE8C4F233EDF388420B121101 /* FirebaseAnalytics */,
+				D555867DEC10EE62B780DE159837C5C5 /* FirebaseDatabase */,
+				2BB062275159837E258EDC64B7F3969F /* FirebaseInstanceID */,
+				40D09BB9883A911BC0382B60DBE5AE6D /* GoogleInterchangeUtilities */,
+				F1C06124D9A83CBDC0F5BA2FD16B5F97 /* GoogleSymbolUtilities */,
+				E360787D6F49DAE89DF0D2D33BF45A04 /* GoogleUtilities */,
+				E428FA1C1C1D3ED997B23302A3305973 /* UITextField+Shake */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		7DB346D0F39D3F0E887471402A8071AB = {
 			isa = PBXGroup;
 			children = (
 				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
 				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
-				8105B9C00D364E5173D5D1D94FA69791 /* Pods */,
+				65249E43051A100CA6EC954C99DBDA55 /* Pods */,
 				9042F368DDAE27A9072B7EB2E8235E7F /* Products */,
 				2F20333BB06A3608B20E08A76B251169 /* Targets Support Files */,
 			);
-			sourceTree = "<group>";
-		};
-		8105B9C00D364E5173D5D1D94FA69791 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				BFD4894937807BD04EF01A862A6EA591 /* UITextField+Shake */,
-			);
-			name = Pods;
 			sourceTree = "<group>";
 		};
 		8991CCEA56DA6CBF4DE8D1529E35D922 /* Pods-iOSTrial&Error */ = {
@@ -148,6 +212,22 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
+		A2ECA24CCCDA0CB9C98414ED77718C35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D0691CD6E4818B6A27485ED8D7773188 /* GoogleSymbolUtilities.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A85D8A1295BEBF360BF6910E664A22EC /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				4485801F0DEAFADF5491A6CA7CFE593B /* Firebase.h */,
+			);
+			name = Analytics;
+			sourceTree = "<group>";
+		};
 		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
@@ -156,14 +236,62 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		BFD4894937807BD04EF01A862A6EA591 /* UITextField+Shake */ = {
+		CE695455CDDD3632ABADE01357F60FC8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				36F6C12FF1F62B73AE904D6D27C46D40 /* UITextField+Shake.h */,
-				39D2CBD9E51CFAE1DF30040F5B8AB61B /* UITextField+Shake.m */,
-				09705294BAF2910CC701CBADE11DC3EF /* Support Files */,
+				1B53F94392A6F560B1B12F17D2D4602B /* FirebaseInstanceID.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D1764B0414B21D39A706FF6806A92159 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				14A073484C30AD64649902AB0E4B7466 /* FirebaseAnalytics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D555867DEC10EE62B780DE159837C5C5 /* FirebaseDatabase */ = {
+			isa = PBXGroup;
+			children = (
+				0FB8D3332B05BACEBB0029EA920A41F8 /* Frameworks */,
+			);
+			path = FirebaseDatabase;
+			sourceTree = "<group>";
+		};
+		E360787D6F49DAE89DF0D2D33BF45A04 /* GoogleUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				4070E377A851E2AC2EC906DC39E6E912 /* Frameworks */,
+			);
+			path = GoogleUtilities;
+			sourceTree = "<group>";
+		};
+		E428FA1C1C1D3ED997B23302A3305973 /* UITextField+Shake */ = {
+			isa = PBXGroup;
+			children = (
+				397C831DD97A9139F84412D84A775D72 /* UITextField+Shake.h */,
+				AB4320306751F1D22DE42E0B0654259F /* UITextField+Shake.m */,
+				5E9A0079B1EB1EAC697D4F20197F327F /* Support Files */,
 			);
 			path = "UITextField+Shake";
+			sourceTree = "<group>";
+		};
+		F1C06124D9A83CBDC0F5BA2FD16B5F97 /* GoogleSymbolUtilities */ = {
+			isa = PBXGroup;
+			children = (
+				A2ECA24CCCDA0CB9C98414ED77718C35 /* Frameworks */,
+			);
+			path = GoogleSymbolUtilities;
+			sourceTree = "<group>";
+		};
+		F73995AFDDB23D2C0E5F12645170DEE5 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				A85D8A1295BEBF360BF6910E664A22EC /* Analytics */,
+			);
+			path = Firebase;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -397,7 +525,7 @@
 		};
 		B68AD4BE6CEE404187BE12C2B0E2DE75 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E75EC321AA4AB16ECE91D930F00505B /* UITextField+Shake.xcconfig */;
+			baseConfigurationReference = E0DE9A9C40113F182A9F9C8F4685AC1F /* UITextField+Shake.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
@@ -469,7 +597,7 @@
 		};
 		FF29D81F49F7828FADF4B9A373BD5DF2 /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1E75EC321AA4AB16ECE91D930F00505B /* UITextField+Shake.xcconfig */;
+			baseConfigurationReference = E0DE9A9C40113F182A9F9C8F4685AC1F /* UITextField+Shake.xcconfig */;
 			buildSettings = {
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";

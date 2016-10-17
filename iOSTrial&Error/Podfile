@@ -6,6 +6,10 @@ target 'iOSTrial&Error' do
   use_frameworks!
 
 pod 'UITextField+Shake', '~> 1.1'
+pod 'Firebase/Core'
+pod 'Firebase/Database'
+
+
 # pods go here
 
   # Pods for iOSTrial&Error
