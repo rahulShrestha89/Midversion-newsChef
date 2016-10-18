@@ -39,8 +39,8 @@ class LandingPageViewController: UIViewController {
 
     @IBAction func onSignInButtonTapped(_ sender: AnyObject) {
         
-        let childRef = FIRDatabase.database().reference(withPath: "signedup-users")
-        
+        let ref = FIRDatabase.database().reference(withPath: "signedup-users")
+
         // Create a Digits appearance with Cannonball colors.
         let configuration = DGTAuthenticationConfiguration(accountFields: .defaultOptionMask)
         
@@ -62,13 +62,36 @@ class LandingPageViewController: UIViewController {
                 
                 // check if this number is already regsitered on the FIREBASE database
                 let userNumber = session?.phoneNumber
-                let currentSession = session?.userID
-                let userInfo = PhoneNumber_FireBase(phoneNumber: userNumber!,
-                                              userSession: currentSession!)
+
+                ref.observeSingleEvent(of: .value, with: { (snapshot) in
+                    
+                    if snapshot.hasChild(userNumber!){
+                        
+                        print("user already exists")
+                        self.performSegue(withIdentifier: "showTabFromLanding", sender: self)
+                        
+                    }else{
+                        
+                        print("the user doesnt exist")
+                        
+                        let currentSession = session?.userID
+                        let sessionToken = session?.authToken
+                        
+                        let userInfoModelData = PhoneNumber_FireBase(phoneNumber: userNumber!,
+                                                                     userSession: currentSession!,
+                                                                     sessionToken: sessionToken!)
+                        
+                        // send it to firebase
+                        let userInfo = ref.child(userNumber!)
+                        userInfo.setValue(userInfoModelData.toAnyObject())
+                        
+                        self.performSegue(withIdentifier: "showSignIn", sender: self)
+                    }
+                    
+                    
+                })
                 
-                childRef.setValue(userInfo.toAnyObject())
                 
-                self.performSegue(withIdentifier: "showSignIn", sender: self)
 
             } else {
                 NSLog("Authentication error: %@", error!.localizedDescription)

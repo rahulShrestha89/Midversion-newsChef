@@ -95,6 +95,7 @@
                         <outlet property="privacyPolicyButton" destination="qhX-mM-S4A" id="iLa-xK-5oK"/>
                         <outlet property="signInButton" destination="3kd-5f-s2S" id="N4k-s0-Oob"/>
                         <segue destination="93v-dr-r8u" kind="presentation" identifier="showSignIn" id="BhT-Re-kFg"/>
+                        <segue destination="rNi-Bc-1LM" kind="presentation" identifier="showTabFromLanding" id="lBm-Oc-jKU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -260,7 +261,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="sL7-qF-cUL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1777" y="358"/>
+            <point key="canvasLocation" x="1540" y="558"/>
         </scene>
         <!--Tabs-->
         <scene sceneID="1v8-9M-esO">
@@ -455,4 +456,7 @@
         <image name="trendingTab" width="50" height="50"/>
         <image name="userTab" width="50" height="50"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="lBm-Oc-jKU"/>
+    </inferredMetricsTieBreakers>
 </document>
