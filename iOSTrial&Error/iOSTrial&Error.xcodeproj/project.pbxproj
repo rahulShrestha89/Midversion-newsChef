@@ -8,6 +8,8 @@
 
 /* Begin PBXBuildFile section */
 		5313C4641D88028300D434DB /* LookUpChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5313C4631D88028300D434DB /* LookUpChildViewController.swift */; };
+		531CE3AF1DB6FBBC00687574 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531CE3AE1DB6FBBC00687574 /* Category.swift */; };
+		531CE3B11DB7007600687574 /* NewsCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531CE3B01DB7007600687574 /* NewsCategories.swift */; };
 		533603E81D80EE3300EAE5A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533603E71D80EE3300EAE5A6 /* AppDelegate.swift */; };
 		533603ED1D80EE3300EAE5A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 533603EB1D80EE3300EAE5A6 /* Main.storyboard */; };
 		533603F01D80EE3300EAE5A6 /* iOSTrial_Error.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 533603EE1D80EE3300EAE5A6 /* iOSTrial_Error.xcdatamodeld */; };
@@ -38,6 +40,7 @@
 		53D99B4E1D90A09E00CC1FA5 /* TheLastCall.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 53D99B4D1D90A09E00CC1FA5 /* TheLastCall.ttf */; };
 		53D99B501D90A2EC00CC1FA5 /* PrivacyPolicyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D99B4F1D90A2EC00CC1FA5 /* PrivacyPolicyViewController.swift */; };
 		53D99B521D90BCBA00CC1FA5 /* SignInPhoneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53D99B511D90BCBA00CC1FA5 /* SignInPhoneViewController.swift */; };
+		53ED12FE1DB839AA00E92896 /* CategoryCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53ED12FD1DB839AA00E92896 /* CategoryCollectionViewController.swift */; };
 		53EE24B41D812821000BDDFB /* DigitsKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53EE24B21D812821000BDDFB /* DigitsKit.framework */; };
 		53EE24B51D812821000BDDFB /* DigitsKitResources.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 53EE24B31D812821000BDDFB /* DigitsKitResources.bundle */; };
 		53F85DB81D94500F00759D97 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F85DB71D94500F00759D97 /* AccountViewController.swift */; };
@@ -49,6 +52,8 @@
 		2EF9F97F6C4305FEC93232F2 /* Pods-iOSTrial&Error.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTrial&Error.release.xcconfig"; path = "Pods/Target Support Files/Pods-iOSTrial&Error/Pods-iOSTrial&Error.release.xcconfig"; sourceTree = "<group>"; };
 		52EE189B19CB3F257CAF79EA /* Pods_iOSTrial_Error.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_iOSTrial_Error.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5313C4631D88028300D434DB /* LookUpChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LookUpChildViewController.swift; sourceTree = "<group>"; };
+		531CE3AE1DB6FBBC00687574 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		531CE3B01DB7007600687574 /* NewsCategories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCategories.swift; sourceTree = "<group>"; };
 		533603E41D80EE3300EAE5A6 /* iOSTrial&Error.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOSTrial&Error.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		533603E71D80EE3300EAE5A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		533603EC1D80EE3300EAE5A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -83,6 +88,7 @@
 		53D99B4D1D90A09E00CC1FA5 /* TheLastCall.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = TheLastCall.ttf; sourceTree = "<group>"; };
 		53D99B4F1D90A2EC00CC1FA5 /* PrivacyPolicyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyViewController.swift; sourceTree = "<group>"; };
 		53D99B511D90BCBA00CC1FA5 /* SignInPhoneViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignInPhoneViewController.swift; sourceTree = "<group>"; };
+		53ED12FD1DB839AA00E92896 /* CategoryCollectionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionViewController.swift; sourceTree = "<group>"; };
 		53EE24B21D812821000BDDFB /* DigitsKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = DigitsKit.framework; sourceTree = "<group>"; };
 		53EE24B31D812821000BDDFB /* DigitsKitResources.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = DigitsKitResources.bundle; path = DigitsKit.framework/Versions/A/Resources/DigitsKitResources.bundle; sourceTree = "<group>"; };
 		53F85DB71D94500F00759D97 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
@@ -182,6 +188,8 @@
 			isa = PBXGroup;
 			children = (
 				534E14551DB595DE002D1884 /* PhoneNumber_FireBase.swift */,
+				531CE3AE1DB6FBBC00687574 /* Category.swift */,
+				531CE3B01DB7007600687574 /* NewsCategories.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -196,6 +204,7 @@
 				53D99B511D90BCBA00CC1FA5 /* SignInPhoneViewController.swift */,
 				536E76DE1D93AC5000A436DE /* SearchNewsViewController.swift */,
 				53F85DB71D94500F00759D97 /* AccountViewController.swift */,
+				53ED12FD1DB839AA00E92896 /* CategoryCollectionViewController.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -390,6 +399,7 @@
 				53F85DB81D94500F00759D97 /* AccountViewController.swift in Sources */,
 				534EEC211D90E632008D7E6E /* YoshikoTextField.swift in Sources */,
 				536E76DF1D93AC5000A436DE /* SearchNewsViewController.swift in Sources */,
+				53ED12FE1DB839AA00E92896 /* CategoryCollectionViewController.swift in Sources */,
 				533603F01D80EE3300EAE5A6 /* iOSTrial_Error.xcdatamodeld in Sources */,
 				534EEC1E1D90E632008D7E6E /* MinoruTextField.swift in Sources */,
 				534EEC1C1D90E632008D7E6E /* KaedeTextField.swift in Sources */,
@@ -399,8 +409,10 @@
 				534EEC1A1D90E632008D7E6E /* IsaoTextField.swift in Sources */,
 				53AF09EC1D87796500FF07D6 /* LookAroundPageViewController.swift in Sources */,
 				53D99B501D90A2EC00CC1FA5 /* PrivacyPolicyViewController.swift in Sources */,
+				531CE3AF1DB6FBBC00687574 /* Category.swift in Sources */,
 				534EEC171D90E632008D7E6E /* AkiraTextField.swift in Sources */,
 				534EEC1F1D90E632008D7E6E /* TextFieldsEffects.swift in Sources */,
+				531CE3B11DB7007600687574 /* NewsCategories.swift in Sources */,
 				5313C4641D88028300D434DB /* LookUpChildViewController.swift in Sources */,
 				53D99B521D90BCBA00CC1FA5 /* SignInPhoneViewController.swift in Sources */,
 				536F4A2C1D85E857006093A0 /* LandingPageViewController.swift in Sources */,
