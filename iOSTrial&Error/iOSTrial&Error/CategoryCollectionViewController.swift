@@ -8,11 +8,27 @@
 
 import UIKit
 
+
 class CategoryCollectionViewController: UICollectionViewController
 {
     
     // data source
     let categories = NewsCategories()
+    
+    private let leftAnDRightPaddings: CGFloat = 32.0
+    private let numberOfItemsPerRow: CGFloat = 3.0
+    private let heightAdjustment: CGFloat = 10.0
+    
+    // MARK: View controller life cycle
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        
+        let width = ((collectionView?.frame)!.width - leftAnDRightPaddings) / numberOfItemsPerRow
+        
+        let layout = collectionViewLayout as! UICollectionViewFlowLayout
+        
+        layout.itemSize = CGSize(width: width, height: (width + heightAdjustment))
+    }
     
     //MARK: - UICollectionViewDataSource
     override func numberOfSections(in collectionView: UICollectionView) -> Int {
