@@ -48,7 +48,9 @@ class CategoryCollectionViewController: UICollectionViewController
     
     override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
         
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Storyboard.CellIdentifier, for: indexPath as IndexPath) as UICollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: Storyboard.CellIdentifier, for: indexPath as IndexPath) as! CategoryCollectionViewCell
+        
+        cell.category = categories.categoryForItemAtIndexPath(indexPath: indexPath as NSIndexPath)
         
         return cell
     }

@@ -142,10 +142,10 @@ class NewsCategories
             var categories = [Category]()
             categories.append(Category(title: "The Atlantic", image: UIImage(named: "The Atlantic")!, section: "Politics"))
             categories.append(Category(title: "The Hill", image: UIImage(named: "The Hill")!, section: "Politics"))
-            categories.append(Category(title: "Daily Intelligencer", image: UIImage(named: "Daily Intelligencer")!, section: "Politics"))
+            categories.append(Category(title: "Intelligence", image: UIImage(named: "Daily Intelligencer")!, section: "Politics"))
             categories.append(Category(title: "Vanity Fair", image: UIImage(named: "Vanity Fair")!, section: "Politics"))
             categories.append(Category(title: "TIME", image: UIImage(named: "TIME")!, section: "Politics"))
-            categories.append(Category(title: "The Huffington Post",image: UIImage(named: "The Huffington Post")!, section: "Politics"))
+            categories.append(Category(title: "Huffington",image: UIImage(named: "The Huffington Post")!, section: "Politics"))
             
             return categories
         }
@@ -157,7 +157,7 @@ class NewsCategories
         {
             var categories = [Category]()
             categories.append(Category(title: "AFAR", image: UIImage(named: "AFAR")!, section: "Travel"))
-            categories.append(Category(title: "The New York Times",image: UIImage(named: "The New York Times")!, section: "Travel"))
+            categories.append(Category(title: "The NY Times",image: UIImage(named: "The New York Times")!, section: "Travel"))
             categories.append(Category(title: "Men’s Journal",  image: UIImage(named: "Men’s Journal")!, section: "Travel"))
             categories.append(Category(title: "Smithsonian", image: UIImage(named: "Smithsonian")!, section: "Travel"))
             categories.append(Category(title: "Wallpaper",image: UIImage(named: "Wallpaper")!,   section: "Travel"))
