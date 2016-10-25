@@ -72,6 +72,16 @@ class CategoryCollectionViewController: UICollectionViewController
         
         return cell
     }
+    
+    // MARK: UICOllectionViewDelegate
+    
+    override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        
+        let category = categories.categoryForItemAtIndexPath(indexPath: indexPath as NSIndexPath)
+        print("InfoHere")
+        print(category!.title)
+        
+    }
 
 }
 
