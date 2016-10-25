@@ -47,6 +47,7 @@
 		53F85DB81D94500F00759D97 /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 53F85DB71D94500F00759D97 /* AccountViewController.swift */; };
 		53FD70201D85CC0E00559FF3 /* TwitterCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53FD701F1D85CC0E00559FF3 /* TwitterCore.framework */; };
 		D529380360E20A7DCE01BE3A /* Pods_iOSTrial_Error.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52EE189B19CB3F257CAF79EA /* Pods_iOSTrial_Error.framework */; };
+		FF41D4841DBEE32E00A4B3DC /* CategoryCollectionHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FF41D4831DBEE32E00A4B3DC /* CategoryCollectionHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -96,6 +97,7 @@
 		53F85DB71D94500F00759D97 /* AccountViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
 		53FD701F1D85CC0E00559FF3 /* TwitterCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = TwitterCore.framework; sourceTree = "<group>"; };
 		81A4C0A0706E111EEB235116 /* Pods-iOSTrial&Error.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-iOSTrial&Error.debug.xcconfig"; path = "Pods/Target Support Files/Pods-iOSTrial&Error/Pods-iOSTrial&Error.debug.xcconfig"; sourceTree = "<group>"; };
+		FF41D4831DBEE32E00A4B3DC /* CategoryCollectionHeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoryCollectionHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -208,6 +210,7 @@
 				53F85DB71D94500F00759D97 /* AccountViewController.swift */,
 				53ED12FD1DB839AA00E92896 /* CategoryCollectionViewController.swift */,
 				53ED12FF1DB8760600E92896 /* CategoryCollectionViewCell.swift */,
+				FF41D4831DBEE32E00A4B3DC /* CategoryCollectionHeaderView.swift */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -421,6 +424,7 @@
 				53D99B521D90BCBA00CC1FA5 /* SignInPhoneViewController.swift in Sources */,
 				536F4A2C1D85E857006093A0 /* LandingPageViewController.swift in Sources */,
 				533603E81D80EE3300EAE5A6 /* AppDelegate.swift in Sources */,
+				FF41D4841DBEE32E00A4B3DC /* CategoryCollectionHeaderView.swift in Sources */,
 				536F4A301D8602D6006093A0 /* ColorConstants.swift in Sources */,
 				534EEC1B1D90E632008D7E6E /* JiroTextField.swift in Sources */,
 			);

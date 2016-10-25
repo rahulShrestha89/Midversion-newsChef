@@ -12,6 +12,7 @@ import UIKit
 class CategoryCollectionViewController: UICollectionViewController
 {
     
+      
     // data source
     let categories = NewsCategories()
     
@@ -22,8 +23,7 @@ class CategoryCollectionViewController: UICollectionViewController
     // MARK: View controller life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        let width = ((collectionView?.frame)!.width - leftAnDRightPaddings) / numberOfItemsPerRow
+                let width = ((collectionView?.frame)!.width - leftAnDRightPaddings) / numberOfItemsPerRow
         
         let layout = collectionViewLayout as! UICollectionViewFlowLayout
         
@@ -40,6 +40,24 @@ class CategoryCollectionViewController: UICollectionViewController
         
         return categories.numberOfCategories
     }
+    
+    override func collectionView(_ collectionView: UICollectionView,
+                                 viewForSupplementaryElementOfKind kind: String,
+                                 at indexPath: IndexPath) -> UICollectionReusableView {
+        //1
+        switch kind {
+        //2
+        case UICollectionElementKindSectionHeader:
+            //3
+            let headerView = collectionView.dequeueReusableSupplementaryView(ofKind: kind,withReuseIdentifier: "CategoryCollectionHeaderView",
+                for: indexPath) as! CategoryCollectionHeaderView
+            return headerView
+        default:
+            //4
+            assert(false, "Unexpected element kind")
+        }
+    }
+    
     
     private struct Storyboard
     {
