@@ -10,6 +10,7 @@
 		5313C4641D88028300D434DB /* LookUpChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5313C4631D88028300D434DB /* LookUpChildViewController.swift */; };
 		531CE3AF1DB6FBBC00687574 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531CE3AE1DB6FBBC00687574 /* Category.swift */; };
 		531CE3B11DB7007600687574 /* NewsCategories.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531CE3B01DB7007600687574 /* NewsCategories.swift */; };
+		531DD24C1DBF40200055F2D1 /* UserCategorySelection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 531DD24B1DBF40200055F2D1 /* UserCategorySelection.swift */; };
 		533603E81D80EE3300EAE5A6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 533603E71D80EE3300EAE5A6 /* AppDelegate.swift */; };
 		533603ED1D80EE3300EAE5A6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 533603EB1D80EE3300EAE5A6 /* Main.storyboard */; };
 		533603F01D80EE3300EAE5A6 /* iOSTrial_Error.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 533603EE1D80EE3300EAE5A6 /* iOSTrial_Error.xcdatamodeld */; };
@@ -56,6 +57,8 @@
 		5313C4631D88028300D434DB /* LookUpChildViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LookUpChildViewController.swift; sourceTree = "<group>"; };
 		531CE3AE1DB6FBBC00687574 /* Category.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
 		531CE3B01DB7007600687574 /* NewsCategories.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NewsCategories.swift; sourceTree = "<group>"; };
+		531DD24B1DBF40200055F2D1 /* UserCategorySelection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserCategorySelection.swift; sourceTree = "<group>"; };
+		531DD24D1DBF4A180055F2D1 /* iOSTrial&Error.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "iOSTrial&Error.entitlements"; sourceTree = "<group>"; };
 		533603E41D80EE3300EAE5A6 /* iOSTrial&Error.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "iOSTrial&Error.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		533603E71D80EE3300EAE5A6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		533603EC1D80EE3300EAE5A6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -145,6 +148,7 @@
 		533603E61D80EE3300EAE5A6 /* iOSTrial&Error */ = {
 			isa = PBXGroup;
 			children = (
+				531DD24D1DBF4A180055F2D1 /* iOSTrial&Error.entitlements */,
 				536E9D2C1D87A8370060D66F /* Assets */,
 				53FD70231D85CCC100559FF3 /* Constants */,
 				53FD70221D85CCAE00559FF3 /* Controllers */,
@@ -194,6 +198,7 @@
 				534E14551DB595DE002D1884 /* PhoneNumber_FireBase.swift */,
 				531CE3AE1DB6FBBC00687574 /* Category.swift */,
 				531CE3B01DB7007600687574 /* NewsCategories.swift */,
+				531DD24B1DBF40200055F2D1 /* UserCategorySelection.swift */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -281,6 +286,11 @@
 						DevelopmentTeam = C6LM8Y68KQ;
 						LastSwiftMigration = 0800;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Keychain = {
+								enabled = 1;
+							};
+						};
 					};
 				};
 			};
@@ -425,6 +435,7 @@
 				536F4A2C1D85E857006093A0 /* LandingPageViewController.swift in Sources */,
 				533603E81D80EE3300EAE5A6 /* AppDelegate.swift in Sources */,
 				FF41D4841DBEE32E00A4B3DC /* CategoryCollectionHeaderView.swift in Sources */,
+				531DD24C1DBF40200055F2D1 /* UserCategorySelection.swift in Sources */,
 				536F4A301D8602D6006093A0 /* ColorConstants.swift in Sources */,
 				534EEC1B1D90E632008D7E6E /* JiroTextField.swift in Sources */,
 			);
@@ -549,6 +560,7 @@
 			baseConfigurationReference = 81A4C0A0706E111EEB235116 /* Pods-iOSTrial&Error.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "iOSTrial&Error/iOSTrial&Error.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				DEVELOPMENT_TEAM = C6LM8Y68KQ;
@@ -570,6 +582,7 @@
 			baseConfigurationReference = 2EF9F97F6C4305FEC93232F2 /* Pods-iOSTrial&Error.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = "iOSTrial&Error/iOSTrial&Error.entitlements";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				DEVELOPMENT_TEAM = C6LM8Y68KQ;
 				"DEVELOPMENT_TEAM[sdk=*]" = C6LM8Y68KQ;

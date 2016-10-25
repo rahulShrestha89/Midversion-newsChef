@@ -33,7 +33,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 //            let postSignInViewController: AnyObject! = storyboard.instantiateViewController(withIdentifier: "LandingPageViewController")
 //            window?.rootViewController = postSignInViewController as? UIViewController
 //        }
-//        
+        
         FIRApp.configure()
         
         return true

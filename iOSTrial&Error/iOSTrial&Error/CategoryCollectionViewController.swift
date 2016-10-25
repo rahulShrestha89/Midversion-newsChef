@@ -7,12 +7,20 @@
 //
 
 import UIKit
-
+import DigitsKit
+import FirebaseDatabase
 
 class CategoryCollectionViewController: UICollectionViewController
 {
+    var ref: FIRDatabaseReference!
     
-      
+    let button = UIButton()
+    
+    let screenSize: CGRect = UIScreen.main.bounds
+    let digitsRef = Digits.sharedInstance().session()
+    
+    var topicsArray = [String]()
+    
     // data source
     let categories = NewsCategories()
     
@@ -23,11 +31,32 @@ class CategoryCollectionViewController: UICollectionViewController
     // MARK: View controller life cycle
     override func viewDidLoad() {
         super.viewDidLoad()
-                let width = ((collectionView?.frame)!.width - leftAnDRightPaddings) / numberOfItemsPerRow
+        
+        ref = FIRDatabase.database().reference(withPath: "user-chosen-topics")
+    
+        
+        let width = ((collectionView?.frame)!.width - leftAnDRightPaddings) / numberOfItemsPerRow
         
         let layout = collectionViewLayout as! UICollectionViewFlowLayout
         
         layout.itemSize = CGSize(width: width, height: (width + heightAdjustment))
+        
+        createButton()
+        
+    }
+
+    func createButton () {
+        
+        button.setTitle("Next", for: .normal)
+        button.setTitleColor(UIColor.white, for: .normal)
+        button.frame = CGRect(x: screenSize.width/3,y: screenSize.height/1.1, width: 150,height: 50)
+        
+        button.addTarget(self, action: #selector(nextButtonPressed(sender:)), for: UIControlEvents.touchUpInside)
+
+        decorateButton(button,color: UIColor.newsChefRedColor())
+        self.view.addSubview(button)
+        
+        button.isHidden = true
     }
     
     //MARK: - UICollectionViewDataSource
@@ -78,10 +107,45 @@ class CategoryCollectionViewController: UICollectionViewController
     override func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
         
         let category = categories.categoryForItemAtIndexPath(indexPath: indexPath as NSIndexPath)
-        print("InfoHere")
-        print(category!.title)
+        
+        topicsArray.append((category?.title)!)
+        
+        if(topicsArray.count > 4)
+        {
+            button.isHidden = false
+        }
         
     }
+
+    private func decorateButton(_ button: UIButton, color: UIColor) {
+        // Draw the border around a button.
+        button.layer.masksToBounds = false
+        button.layer.borderColor = color.cgColor
+        button.layer.borderWidth = 2
+        button.layer.cornerRadius = 6
+        button.backgroundColor = color
+    }
+    
+    
+    func nextButtonPressed(sender:UIButton!) {
+        print("next button was pressed")
+    }
+    
+    
+    // create an action to call a next segues
+    // while performing that segue pass all the info from the array 
+    // with topic to the firebase
+    
+    // get users phone number and store the category every time user presses on a
+    // particular category
+//    let userInfoModelData = UserCategorySelection(phoneNumber: ("+19859564513"),
+//                                                  sessionToken: ("hvajhsvdjhv"),topics: category!.title)
+//    
+//    
+//    // send it to firebase
+//    let userInfo = ref.child("+19859564513")
+//    userInfo.setValue(userInfoModelData.toAnyObject())
+
 
 }
 
