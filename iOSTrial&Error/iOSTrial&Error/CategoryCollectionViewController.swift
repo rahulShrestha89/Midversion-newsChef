@@ -109,10 +109,13 @@ class CategoryCollectionViewController: UICollectionViewController
         let category = categories.categoryForItemAtIndexPath(indexPath: indexPath as NSIndexPath)
         
         topicsArray.append((category?.title)!)
-        
+        button.alpha = 0
         if(topicsArray.count > 4)
         {
             button.isHidden = false
+            UIView.animate(withDuration: 0.3) {
+                self.button.alpha = 1
+            }
         }
         
     }
