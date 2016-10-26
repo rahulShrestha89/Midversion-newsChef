@@ -207,7 +207,7 @@
         <!--Search-->
         <scene sceneID="5zU-jR-vta">
             <objects>
-                <viewController id="v70-cB-dVQ" sceneMemberID="viewController">
+                <viewController id="v70-cB-dVQ" customClass="SearchNewsViewController" customModule="iOSTrial_Error" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="3NC-Ad-NwJ"/>
                         <viewControllerLayoutGuide type="bottom" id="w9g-LB-HaX"/>

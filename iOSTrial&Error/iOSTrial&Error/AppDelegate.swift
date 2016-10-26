@@ -12,6 +12,7 @@ import Fabric
 import Crashlytics
 import DigitsKit
 import Firebase
+import TwitterKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -23,16 +24,16 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         
         UITabBar.appearance().tintColor = UIColor.newsChefMainColor()
         
-        Fabric.with([Crashlytics.self,Digits.self])
+        Fabric.with([Crashlytics.self,Digits.self,Twitter.self])
 
 //         Check for an existing Digits session before presenting the sign in screen.
 //         if the user is already in session then
 //         will be redirected towards the tabbed page
-        if (Digits.sharedInstance().session() == nil) {
-            let storyboard = UIStoryboard(name: "Main", bundle: nil)
-            let postSignInViewController: AnyObject! = storyboard.instantiateViewController(withIdentifier: "LandingPageViewController")
-            window?.rootViewController = postSignInViewController as? UIViewController
-        }
+//        if (Digits.sharedInstance().session() == nil) {
+//            let storyboard = UIStoryboard(name: "Main", bundle: nil)
+//            let postSignInViewController: AnyObject! = storyboard.instantiateViewController(withIdentifier: "LandingPageViewController")
+//            window?.rootViewController = postSignInViewController as? UIViewController
+//        }
         
         FIRApp.configure()
         
