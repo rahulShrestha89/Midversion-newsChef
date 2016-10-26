@@ -27,21 +27,19 @@ class SignInPhoneViewController: UIViewController {
     }
     
     func navigateToMainAppScreen() {
-        self.performSegue(withIdentifier: "showTabbedView", sender: self)
+        self.performSegue(withIdentifier: "showSelectionView", sender: self)
     }
 
     @IBAction func onNextButtonTapped(_ sender: AnyObject) {
         
         if(firstName.text=="")
         {
-            self.firstName.shake(20,withDelta: 7.0,speed: 0.03
-            )
+            self.firstName.shake(20,withDelta: 7.0,speed: 0.03)
         }
         
         if(lastName.text=="")
         {
-            self.lastName.shake(20,withDelta: 7.0,speed: 0.03
-            )
+            self.lastName.shake(20,withDelta: 7.0,speed: 0.03)
         }
         if ((firstName.text != "") && (lastName.text != ""))
         {
