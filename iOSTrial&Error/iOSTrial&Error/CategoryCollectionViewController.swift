@@ -148,23 +148,28 @@ class CategoryCollectionViewController: UICollectionViewController
     
     
     func nextButtonPressed(sender:UIButton!) {
-        print("next button was pressed")
+        // create an action to call a next segues
+        // while performing that segue pass all the info from the array
+        // with topic to the firebase
+        
+        // get users phone number and store the category every time user presses on a
+        // particular category
+        
+        let topicList = topicsArray.joined(separator: ",")
+        
+        let userInfoModelData = UserCategorySelection(phoneNumber: ("+19859564513"),sessionToken: ("hvajhsvdjhv"),topics: topicList)
+  
+        // send it to firebase
+        let userInfo = ref.child("+19859564513")
+        userInfo.setValue(userInfoModelData.toAnyObject())
+        
+        self.performSegue(withIdentifier: "showTabViewForFirstTime", sender: self)
+
+        
     }
     
     
-    // create an action to call a next segues
-    // while performing that segue pass all the info from the array 
-    // with topic to the firebase
     
-    // get users phone number and store the category every time user presses on a
-    // particular category
-//    let userInfoModelData = UserCategorySelection(phoneNumber: ("+19859564513"),
-//                                                  sessionToken: ("hvajhsvdjhv"),topics: category!.title)
-//    
-//    
-//    // send it to firebase
-//    let userInfo = ref.child("+19859564513")
-//    userInfo.setValue(userInfoModelData.toAnyObject())
 
 
 }
