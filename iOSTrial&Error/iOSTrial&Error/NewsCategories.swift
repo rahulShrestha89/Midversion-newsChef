@@ -10,9 +10,9 @@ import UIKit
 class NewsCategories
 {
 
-    private var categories = [Category]()
-    private var immutableCategories = [Category]()
-    private var sections = [String]()
+    fileprivate var categories = [Category]()
+    fileprivate var immutableCategories = [Category]()
+    fileprivate var sections = [String]()
     
     // MARK: - Public
     
@@ -28,7 +28,7 @@ class NewsCategories
     {
         categories = createCategories()
         immutableCategories = categories
-        sections = ["Politics", "Travel", "Technology", "Sports"]
+        sections = ["CombinedTopics"]
     }
     
     func deleteItemsAtIndexPaths(indexPaths: [NSIndexPath])
@@ -108,10 +108,8 @@ class NewsCategories
     {
         var newsCategories = [Category]()
         
-        newsCategories += Politics.categories()
-        newsCategories += Travel.categories()
-        newsCategories += Technology.categories()
-        newsCategories += Sports.categories()
+        newsCategories += CombinedTopics.categories()
+
         
         return newsCategories
     }
@@ -135,68 +133,41 @@ class NewsCategories
     }
 }
 
-    class Politics
+    class CombinedTopics
     {
         class func categories() -> [Category]
         {
             var categories = [Category]()
-            categories.append(Category(title: "The Atlantic", image: UIImage(named: "The Atlantic")!, section: "Politics"))
-            categories.append(Category(title: "The Hill", image: UIImage(named: "The Hill")!, section: "Politics"))
-            categories.append(Category(title: "Intelligence", image: UIImage(named: "Daily Intelligencer")!, section: "Politics"))
-            categories.append(Category(title: "Vanity Fair", image: UIImage(named: "Vanity Fair")!, section: "Politics"))
-            categories.append(Category(title: "TIME", image: UIImage(named: "TIME")!, section: "Politics"))
-            categories.append(Category(title: "Huffington",image: UIImage(named: "The Huffington Post")!, section: "Politics"))
+            categories.append(Category(title: "The Atlantic", image: UIImage(named: "The Atlantic")!, section: "CombinedTopics"))
+            categories.append(Category(title: "The Hill", image: UIImage(named: "The Hill")!, section: "CombinedTopics"))
+            categories.append(Category(title: "Intelligence", image: UIImage(named: "Daily Intelligencer")!, section: "CombinedTopics"))
+            categories.append(Category(title: "Vanity Fair", image: UIImage(named: "Vanity Fair")!, section: "CombinedTopics"))
+            categories.append(Category(title: "TIME", image: UIImage(named: "TIME")!, section: "CombinedTopics"))
+            categories.append(Category(title: "Huffington",image: UIImage(named: "The Huffington Post")!, section: "CombinedTopics"))
+            
+            categories.append(Category(title: "AFAR", image: UIImage(named: "AFAR")!, section: "CombinedTopics"))
+            categories.append(Category(title: "The NY Times",image: UIImage(named: "The New York Times")!, section: "CombinedTopics"))
+            categories.append(Category(title: "Men’s Journal",  image: UIImage(named: "Men’s Journal")!, section: "CombinedTopics"))
+            categories.append(Category(title: "Smithsonian", image: UIImage(named: "Smithsonian")!, section: "CombinedTopics"))
+            categories.append(Category(title: "Wallpaper",image: UIImage(named: "Wallpaper")!,   section: "CombinedTopics"))
+            categories.append(Category(title: "Sunset",image: UIImage(named: "Sunset")!, section: "CombinedTopics"))
+            
+            categories.append(Category(title: "WIRED", image: UIImage(named: "WIRED")!, section: "CombinedTopics"))
+            categories.append(Category(title: "Re/code",image: UIImage(named: "Recode")!, section: "CombinedTopics"))
+            categories.append(Category(title: "Quartz",image: UIImage(named: "Quartz")!, section: "CombinedTopics"))
+            categories.append(Category(title: "Daring Fireball", image: UIImage(named: "Daring Fireball")!, section: "CombinedTopics"))
+            
+            categories.append(Category(title: "ESPN", image: UIImage(named: "ESPN")!, section: "CombinedTopics"))
+            categories.append(Category(title: "Soccer",image: UIImage(named: "Soccer")!, section: "CombinedTopics"))
+            categories.append(Category(title: "Boston Red Sox",image: UIImage(named: "Boston Red Sox")!, section: "CombinedTopics"))
+            categories.append(Category(title: "Knicks", image: UIImage(named: "Knicks")!, section: "CombinedTopics"))
+            categories.append(Category(title: "Liverpool FC", image: UIImage(named: "Liverpool FC")!, section: "CombinedTopics"))
             
             return categories
         }
     }
     
-    class Travel
-    {
-        class func categories() -> [Category]
-        {
-            var categories = [Category]()
-            categories.append(Category(title: "AFAR", image: UIImage(named: "AFAR")!, section: "Travel"))
-            categories.append(Category(title: "The NY Times",image: UIImage(named: "The New York Times")!, section: "Travel"))
-            categories.append(Category(title: "Men’s Journal",  image: UIImage(named: "Men’s Journal")!, section: "Travel"))
-            categories.append(Category(title: "Smithsonian", image: UIImage(named: "Smithsonian")!, section: "Travel"))
-            categories.append(Category(title: "Wallpaper",image: UIImage(named: "Wallpaper")!,   section: "Travel"))
-            categories.append(Category(title: "Sunset",image: UIImage(named: "Sunset")!, section: "Travel"))
-            
-            return categories
-        }
-    }
-    
-    class Technology
-    {
-        class func categories() -> [Category]
-        {
-            var categories = [Category]()
-            categories.append(Category(title: "WIRED", image: UIImage(named: "WIRED")!, section: "Technology"))
-            categories.append(Category(title: "Re/code",image: UIImage(named: "Recode")!, section: "Technology"))
-            categories.append(Category(title: "Quartz",image: UIImage(named: "Quartz")!, section: "Technology"))
-            categories.append(Category(title: "Daring Fireball", image: UIImage(named: "Daring Fireball")!, section: "Technology"))
 
-            
-            return categories
-        }
-    }
-    
-    class Sports
-    {
-        class func categories() -> [Category]
-        {
-            var categories = [Category]()
-            categories.append(Category(title: "ESPN", image: UIImage(named: "ESPN")!, section: "Sports"))
-            categories.append(Category(title: "Soccer",image: UIImage(named: "Soccer")!, section: "Sports"))
-            categories.append(Category(title: "Boston Red Sox",image: UIImage(named: "Boston Red Sox")!, section: "Sports"))
-            categories.append(Category(title: "Knicks", image: UIImage(named: "Knicks")!, section: "Sports"))
-            categories.append(Category(title: "Liverpool FC", image: UIImage(named: "Liverpool FC")!, section: "Sports"))
-            
-            
-            return categories
-        }
-    }
     
     
 

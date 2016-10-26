@@ -166,11 +166,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "iOSTrial&amp;Error/NewsCategories.swift"
-            timestampString = "498615799.916565"
+            timestampString = "499135225.827475"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "140"
-            endingLineNumber = "140"
+            startingLineNumber = "138"
+            endingLineNumber = "138"
             landmarkName = "categories()"
             landmarkType = "7">
          </BreakpointContent>

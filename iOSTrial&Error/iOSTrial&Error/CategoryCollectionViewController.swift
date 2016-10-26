@@ -109,6 +109,9 @@ class CategoryCollectionViewController: UICollectionViewController
         let category = categories.categoryForItemAtIndexPath(indexPath: indexPath as NSIndexPath)
         
         topicsArray.append((category?.title)!)
+        
+        deletePublisher(category!)
+        
         button.alpha = 0
         if(topicsArray.count > 4)
         {
@@ -118,6 +121,20 @@ class CategoryCollectionViewController: UICollectionViewController
             }
         }
         
+    }
+    
+    func deletePublisher(_ category: Category)
+    {
+        // 1. delete publisher from the data source
+        let indexPath = categories.indexPathForCategory(category: category)
+        categories.deleteItemsAtIndexPaths(indexPaths: [indexPath])
+        
+        // 2. collectionView.deleteItemsAtIndexPaths([indexPath])
+        UIView.animate(withDuration: 1.0, delay: 0, usingSpringWithDamping: 0.75, initialSpringVelocity: 0.0, options: UIViewAnimationOptions(), animations: { () -> Void in
+            (self.collectionView?.deleteItems(at: [indexPath as IndexPath]))!
+        }) { (finished) -> Void in
+            
+        }
     }
 
     private func decorateButton(_ button: UIButton, color: UIColor) {
