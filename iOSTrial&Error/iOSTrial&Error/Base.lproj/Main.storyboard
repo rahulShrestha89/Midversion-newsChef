@@ -234,13 +234,22 @@
                     <view key="view" contentMode="scaleToFill" id="NhZ-sr-oem">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Trending" translatesAutoresizingMaskIntoConstraints="NO" id="Xip-Fe-bSt"/>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Xip-Fe-bSt" firstAttribute="leading" secondItem="NhZ-sr-oem" secondAttribute="leading" id="Pes-Eh-G79"/>
+                            <constraint firstItem="RNI-jZ-rhT" firstAttribute="top" secondItem="Xip-Fe-bSt" secondAttribute="bottom" id="ZkY-do-04Y"/>
+                            <constraint firstAttribute="trailing" secondItem="Xip-Fe-bSt" secondAttribute="trailing" id="pkl-lz-7YW"/>
+                            <constraint firstItem="Xip-Fe-bSt" firstAttribute="top" secondItem="NhZ-sr-oem" secondAttribute="top" constant="30" id="u9W-35-Lj8"/>
+                        </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Trending" image="trendingTab" id="Ej3-Lm-hi4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="BRq-7L-ICq" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3790" y="973"/>
+            <point key="canvasLocation" x="3789.5999999999999" y="972.86356821589209"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="XxC-b7-QxV">
@@ -579,6 +588,7 @@
     <resources>
         <image name="LandingPageBackground" width="1280" height="960"/>
         <image name="Test" width="334" height="334"/>
+        <image name="Trending" width="621" height="874"/>
         <image name="feedTab" width="50" height="50"/>
         <image name="next" width="64" height="64"/>
         <image name="searchTab" width="50" height="50"/>
